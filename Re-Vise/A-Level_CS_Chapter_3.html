@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your A-Level CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">A-Level CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping A-Level students with learning new skills and applying them in examination</p>
+		<h1><span style="color: #ffffff;"><strong>1.3 Exchanging Data</strong></span></h1>
+<p><span style="color: #ffffff;"><strong>1.3.1 Compression, Encryption and Hashing</strong></span></p>
+<p><span style="font-weight: 400; color: #ffffff;">(a) Lossy vs Lossless compression</span></p>
+<p><span style="color: #ffffff;"><strong>Compression</strong><span style="font-weight: 400;">- The reduction of file sizes to:</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Reduce</strong><span style="font-weight: 400;"> download times</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Make best use of </span><strong>bandwidth</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Reduce file storage</strong><span style="font-weight: 400;"> requirements</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">There are 2 types of </span><strong>compression:</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Lossy</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Some </span><strong>data stripped out</strong><span style="font-weight: 400;"> to</span><strong> reduce file size</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Information not r</span><strong>ecoverable</strong><span style="font-weight: 400;"> hence </span><strong>deleted </strong><span style="font-weight: 400;">since it has </span><strong>least importance</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Typically used for I</span><strong>mages/Videos/Music files</strong><span style="font-weight: 400;">. Data removed is not </span><strong>noticeable </strong><span style="font-weight: 400;">by </span><strong>humans</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Common lossy formats: </span><strong>JPEG/MP3/MPEG</strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Lossless</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Retains all data</strong><span style="font-weight: 400;"> by</span><strong> encoding it efficiently</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>original file </strong><span style="font-weight: 400;">can be </span><strong>regenerated </strong><span style="font-weight: 400;">&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Common lossless formats : </span><strong>ZIP/GIF/PNG</strong></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(b) Run length encoding and dictionary coding</span></p>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">&nbsp;There are 2 types of </span><strong>encoding:</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Run Length Encoding</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Stores redundant data</strong><span style="font-weight: 400;"> (pixels/words/bits) into groupings of bits</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Indexed and stored</strong><span style="font-weight: 400;"> on a dictionary/table + # of occurrences</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Used in </span><strong>TIFF/BMP files</strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Dictionary Encoding</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Compression algorithm</strong><span style="font-weight: 400;"> which uses a </span><strong>known dictionary/own dictionary</strong><span style="font-weight: 400;"> to </span><strong>encode data.&nbsp;</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">File consists of </span><strong>dictionary + sequence of occurrences</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Substitutes entries</strong><span style="font-weight: 400;"> for </span><strong>unique code</strong><span style="font-weight: 400;"> e.g (function = F_N)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Used for </span><strong>ZIP/GIF/PNG files</strong></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(c) Symmetric and asymmetric encryption</span></p>
+<p><span style="color: #ffffff;"><strong>Encryption:</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The process of </span><strong>scrambling data</strong><span style="font-weight: 400;"> that the only way to read it is to </span><strong>decrypt it</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Uses </span><strong>encryption keys</strong><span style="font-weight: 400;"> (long random numbers) to</span><strong> encrypt/decrypt messages</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Public key</strong><span style="font-weight: 400;"> = available to all /</span><strong> Private key</strong><span style="font-weight: 400;"> = Available to owner only</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Long process to </span><strong>encrypt &amp; decrypt</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">There are 2 types of </span><strong>encryption:</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Symmetric Encryption</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Same key</strong><span style="font-weight: 400;"> used to </span><strong>encrypt/decrypt</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Requires</span><strong> both parties</strong><span style="font-weight: 400;"> to have</span><strong> copy of key</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Can&rsquo;t be transferred over internet</strong><span style="font-weight: 400;"> = Easy to decrypt</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Stronger </strong><span style="font-weight: 400;">than asymmetric (Same length)&nbsp;</span></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Asymmetric Encryption</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Different keys</strong><span style="font-weight: 400;"> to </span><strong>encrypt/decrypt </strong><span style="font-weight: 400;">= </span><strong>More secure</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Public key = encrypt / Private key = decrypt</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Example: TLS (</span><strong>Transport Layer Security</strong><span style="font-weight: 400;">) uses symmetric &amp; asymmetric</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(d) Different uses of hashing</span></p>
+<p><span style="color: #ffffff;"><strong>Hashing:&nbsp;</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Used to produce/check passwords</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Stores data in </span><strong>abbreviated form</strong><span style="font-weight: 400;"> e.g 123456 -&gt; 456</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Difficult to </span><strong>regenerate hash value -&gt; original value</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Vulnerable to </span><strong>brute-force attacks</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Low chance of collision </strong><span style="font-weight: 400;">(Different inputs = same output) = &darr; risk of files being the same</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Easy to check </strong><span style="font-weight: 400;">&ndash; the login attempt is hashed again</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>1.3.2 Databases</strong></span></p>
+<p><span style="font-weight: 400; color: #ffffff;">(a) Flat file and relational databases</span></p>
+<p><span style="color: #ffffff;"><strong>Databases</strong><span style="font-weight: 400;">: Structured &amp; Persistent stores of data for ease of processing</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Allow data to be: </span><strong>Retrieved quickly/updated easily/filtered for different views</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Flat file Databases</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Simple data structures </strong><span style="font-weight: 400;">which are easy to </span><strong>maintain </strong><span style="font-weight: 400;">(limited data storage)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Limited use due to</span><strong> redundant/inconsistent data</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">No </span><strong>specialist knowledge to operate</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Harder to </span><strong>update &amp;&nbsp; data format</strong><span style="font-weight: 400;"> is </span><strong>difficult </strong><span style="font-weight: 400;">to </span><strong>change</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Relational Databases</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Based on </span><strong>linked tables</strong><span style="font-weight: 400;"> (relations)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Based on </span><strong>entities </strong><span style="font-weight: 400;">(Rows &amp; Columns)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Each row (</span><strong>tuple</strong><span style="font-weight: 400;">) in a table is </span><strong>equivalent </strong><span style="font-weight: 400;">to a record and is </span><strong>constructed </strong><span style="font-weight: 400;">in the </span><strong>same </strong><span style="font-weight: 400;">way.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Each </span><strong>column </strong><span style="font-weight: 400;">(attribute) is equivalent to a </span><strong>field </strong><span style="font-weight: 400;">and must have just </span><strong>one data type</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Improves </span><strong>data consistency &amp; integrity</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Easier to change data</span><strong> format &amp; update records</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Improves</span><strong> levels of security</strong><span style="font-weight: 400;"> so easier to access data</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Reduces data redundancy</strong><span style="font-weight: 400;"> to avoid wasting storage</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Primary Key (PK)</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is a </span><strong>unique identifier</strong><span style="font-weight: 400;"> in a table used to </span><strong>define each record</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Foreign Key (FK)</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>PK </strong><span style="font-weight: 400;">in one table is used as an </span><strong>attribute or FK</strong><span style="font-weight: 400;"> in another to </span><strong>provide links </strong><span style="font-weight: 400;">or relationships between tables.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Represents a</span> <span style="font-weight: 400;">(</span><strong>one to many</strong><span style="font-weight: 400;">) </span><strong>relationship </strong><span style="font-weight: 400;">where the FK is at the &ldquo;</span><strong>many</strong><span style="font-weight: 400;">&rdquo; end of the relationship to avoid </span><strong>data duplication</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">This allows</span><strong> relevant data</strong><span style="font-weight: 400;"> to be </span><strong>extracted </strong><span style="font-weight: 400;">from different tables.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Secondary Key (SK)</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">An </span><strong>attribute </strong><span style="font-weight: 400;">that allows a </span><strong>group of records</strong><span style="font-weight: 400;"> in a table to be </span><strong>sorted</strong><span style="font-weight: 400;"> and </span><strong>searched differently </strong><span style="font-weight: 400;">from the </span><strong>PK </strong><span style="font-weight: 400;">and data to be accessed in a </span><strong>different order</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Entity Relationships</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Used to plan </span><strong>RDB</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Diagrams to show </span><strong>relation</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Helpful in </span><strong>reducing redundancy</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>One-One Relationship</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Not suitable for relationship tables</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>One-Many Relationship</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Used in well designed RBS</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Many-Many Relationship</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Leads to data redundancy</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Indexing</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>PK </strong><span style="font-weight: 400;">is </span><strong>normally indexed</strong><span style="font-weight: 400;"> for</span><strong> quick access</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>SK </strong><span style="font-weight: 400;">is an </span><strong>alternative index</strong><span style="font-weight: 400;"> allowing for </span><strong>faster searches</strong><span style="font-weight: 400;"> based on </span><strong>different attributes</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>index </strong><span style="font-weight: 400;">takes up </span><strong>extra space</strong><span style="font-weight: 400;"> in the </span><strong>database</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">When a </span><strong>data table</strong><span style="font-weight: 400;"> is </span><strong>changed</strong><span style="font-weight: 400;">, the </span><strong>indexes </strong><span style="font-weight: 400;">have to be </span><strong>rebuilt</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Serial files</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Are</span><strong> relatively short </strong><span style="font-weight: 400;">and </span><strong>simple </strong><span style="font-weight: 400;">files.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Data records</strong><span style="font-weight: 400;"> are </span><strong>stored chronologically</strong><span style="font-weight: 400;"> i.e. in the order in which they are entered.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">New data is always </span><strong>appended </strong><span style="font-weight: 400;">to the</span><strong> existing records</strong><span style="font-weight: 400;"> at the end of the </span><strong>file</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">To </span><strong>access a record</strong><span style="font-weight: 400;">, you search from the</span><strong> first item</strong><span style="font-weight: 400;"> and read each preceding item.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Easy </strong><span style="font-weight: 400;">to </span><strong>implement</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Adding </span><strong>new records</strong><span style="font-weight: 400;"> is easy.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Searching </strong><span style="font-weight: 400;">is easy but </span><strong>slow</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Sequential files</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Are </span><strong>serial files </strong><span style="font-weight: 400;">where the data in the file is </span><strong>ordered logically </strong><span style="font-weight: 400;">according to a </span><strong>key field</strong><span style="font-weight: 400;"> in the record.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Indexed sequential files</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Records are </span><strong>sorted according </strong><span style="font-weight: 400;">to a </span><strong>PK</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">A </span><strong>separate index </strong><span style="font-weight: 400;">is kept that allows </span><strong>groups or blocks</strong><span style="font-weight: 400;"> of records to be accessed </span><strong>directly </strong><span style="font-weight: 400;">and </span><strong>quickly</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>New records</strong><span style="font-weight: 400;"> need to be inserted in the </span><strong>correct position</strong><span style="font-weight: 400;"> and the index has to be </span><strong>maintained </strong><span style="font-weight: 400;">and </span><strong>updated </strong><span style="font-weight: 400;">to be kept in </span><strong>sync </strong><span style="font-weight: 400;">with the </span><strong>data</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is more </span><strong>difficult </strong><span style="font-weight: 400;">the </span><strong>manage </strong><span style="font-weight: 400;">but accessing </span><strong>individual files</strong><span style="font-weight: 400;"> is much </span><strong>faster</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">More </span><strong>space efficient</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">More </span><strong>suited </strong><span style="font-weight: 400;">to </span><strong>large files</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Database Management System (DBMS)</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is </span><strong>software </strong><span style="font-weight: 400;">that </span><strong>creates</strong><span style="font-weight: 400;">, </span><strong>maintains </strong><span style="font-weight: 400;">and </span><strong>handles </strong><span style="font-weight: 400;">the </span><strong>complexities </strong><span style="font-weight: 400;">of </span><strong>managing a database</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">May provide </span><strong>UI</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">May use </span><strong>SQL </strong><span style="font-weight: 400;">to </span><strong>communicate </strong><span style="font-weight: 400;">with other programs.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Provides</span><strong> different views </strong><span style="font-weight: 400;">of the </span><strong>data </strong><span style="font-weight: 400;">for </span><strong>different users</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Provides </span><strong>security features</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Finds</strong><span style="font-weight: 400;">, </span><strong>adds </strong><span style="font-weight: 400;">and </span><strong>updates </strong><span style="font-weight: 400;">data.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Maintains indexes</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Enforces </span><strong>referential integrity</strong><span style="font-weight: 400;"> and</span><strong> data integrity rules</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Manages </span><strong>access rights</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Provides the </span><strong>means </strong><span style="font-weight: 400;">to </span><strong>create the database structures</strong><span style="font-weight: 400;">: queries, views, tables, interfaces and outputs.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Queries</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Isolate </strong><span style="font-weight: 400;">and </span><strong>display </strong><span style="font-weight: 400;">a </span><strong>subset of data</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>QBE</strong><span style="font-weight: 400;">: query by example.</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(b) Methods of capturing, selecting, managing, exchanging data</span></p>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">There are multiple ways to </span><strong>capture/select/manage/exchange data</strong><span style="font-weight: 400;"> based on the scenario and what needs to be obtained. For example, a hotel would want the guests information so they can process payments.</span></span></p>
+<p><span style="font-weight: 400; color: #ffffff;">(c) Normalisation to 3NF</span></p>
+<p><span style="font-weight: 400; color: #ffffff;">Normalisation: There are 3 stages to normalisation:</span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>1NF</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Separates </span><strong>multiple items/ sets of data</strong><span style="font-weight: 400;"> in each row to remove </span><strong>duplicate values</strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>2NF</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Removes data that occurs on</span><strong> multiple rows </strong><span style="font-weight: 400;">&amp; puts data into</span><strong> new table</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Creates relationship links</strong><span style="font-weight: 400;"> between </span><strong>tables </strong><span style="font-weight: 400;">as necessary by</span><strong> repeated fields</strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>3NF</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Removes fields not </span><strong>directly related </strong><span style="font-weight: 400;">to the </span><strong>primary key</strong><span style="font-weight: 400;"> to their own</span><strong> linked table</strong><span style="font-weight: 400;"> so every value left </span><strong>depends on the key</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">(d) SQL: </span><strong>Structured Query Language</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>SQL Command</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Explanation &amp; Example</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>CREATE TABLE&nbsp;</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Creates an Empty Table:&nbsp;</span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">Create Table_Name (</span></em></span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;column1 datatype,</span></em></span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;column2 datatype,</span></em></span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;column3 datatype,</span></em></span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">)</span></em></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>DROP</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Remove database components (ALTER TABLE can be used to delete column):&nbsp;</span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">ALTER TABLE green DROP COLUMN name;</span></em></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>INSERT&nbsp;</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Adds values into records in tables:</span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">INSERT INTO example(name, dob) VALUES</span></em></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>DELETE</strong></span></p>
+<br /><br /></td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Deletes data from table_name:</span></p>
+<p><span style="font-weight: 400; color: #ffffff;">DELETE FROM &ldquo;example&rdquo; WHERE</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>SELECT&nbsp;</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Lists the field name to be displayed:&nbsp;</span></p>
+<p><span style="font-weight: 400; color: #ffffff;">SELECT &ldquo;Name&rdquo;</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>WHERE</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Lists the search criteria for the field value:&nbsp;</span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">WHERE &ldquo;Name&rdquo; = &lsquo;Fred&rsquo;</span></em></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>AND</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Works when both expressions are true:&nbsp;</span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">&ldquo;Name&rdquo; = &lsquo;Cox&rsquo; AND &ldquo;Order&rdquo; &lt; 3</span></em></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>FROM</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Lists the table the data comes from::&nbsp;</span></p>
+<p><span style="color: #ffffff;"><em><span style="font-weight: 400;">FROM &ldquo;tblCustomer&rdquo;</span></em></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;"><br />(e) Referential integrity</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Transactions </strong><span style="font-weight: 400;">should maintain </span><strong>referential integrity</strong><span style="font-weight: 400;">.&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">This means keeping a database in a </span><strong>consistent state</strong><span style="font-weight: 400;"> so changes to data in one table must take into </span><strong>account data</strong><span style="font-weight: 400;"> in </span><strong>linked tables</strong><span style="font-weight: 400;">&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Enforced by </span><strong>DBMS</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">&nbsp;(f) Transaction processing (ACID), record locking and redundancy</span></p>
+<p><span style="font-weight: 400; color: #ffffff;">ACID rules protect integrity of database:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Atomicity: </strong><span style="font-weight: 400;">A change is either performed or not. Half finished changes not saved.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Consistency: </strong><span style="font-weight: 400;">Any change must retain the overall state of database</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Isolation: </strong><span style="font-weight: 400;">A transaction must not be interrupted by another</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Durability: </strong><span style="font-weight: 400;">Changes must be written to storage in order to preserve them</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Record locking</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Preventing simultaneous access</strong><span style="font-weight: 400;"> to objects in databases to </span><strong>prevent losses</strong><span style="font-weight: 400;"> in updates or data inconsistencies</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">A record is </span><strong>locked </strong><span style="font-weight: 400;">when a user retrieves it from editing/updating</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Anyone else trying to access record is </span><strong>denied access</strong><span style="font-weight: 400;"> until record is completed/cancelled</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Data Redundancy</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is </span><strong>unnecessary repetition of data</strong><span style="font-weight: 400;"> that leads to inconsistencies</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Data should have </span><strong>redundancy </strong><span style="font-weight: 400;">so if part of a database is </span><strong>lost </strong><span style="font-weight: 400;">it should be </span><strong>recoverable from elsewhere</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Redundancy can be provided by RAID setup or mirroring servers.</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>1.3.3 Networks</strong></span></p>
+<p><span style="font-weight: 400; color: #ffffff;">(a) Characteristics of a networks, importance of protocols/standards</span></p>
+<p><span style="color: #ffffff;"><strong>Network</strong><span style="font-weight: 400;">: </span><strong>interconnected set of devices</strong></span></p>
+<p><span style="color: #ffffff;"><strong>Frame</strong><span style="font-weight: 400;">: </span><strong>A unit of data sent on a network</strong></span></p>
+<h2 dir="ltr">&nbsp;</h2>
+<p><span style="color: #ffffff;"><strong>Private Networks</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Advantages</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Disadvantages</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Security (Control of access)</span></li>
+</ul>
+</td>
+<td rowspan="2">
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Specialist staff/security/backups needed</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Confidence of availability</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;"><br />Network Topologies: the layout of a network</span></p>
+<p><span style="color: #ffffff;"><strong>Different types of Network Topologies</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Bus</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Nodes attached to single </span><strong>backbone </strong><span style="font-weight: 400;">= vulnerable to changes</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Prone to </span><strong>data collisions</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Uncommon now</span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Ring</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Nodes attached to exactly </span><strong>2 other nodes</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Data sent in 1 direction to </span><strong>avoid collisions</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Easily </span><strong>disrupted</strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Star</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Most </strong><span style="font-weight: 400;">networks are star layouts</span></span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Resilient</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Speratrate </strong><span style="font-weight: 400;">link from each node to</span><strong> switch/hub</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Standards/protocols- </strong><span style="font-weight: 400;">Set of rules relating to the </span><strong>communication of devices &amp; data transmitted between them:</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Examples: TCP/IP stack</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Open Systems Interconnection (OSI) model</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">An openly available (non-proprietary) network model.</span></li>
+</ul>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">7 layers in the</span><strong> OSI model</strong><span style="font-weight: 400;">:</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">7 &ndash; </span><strong>Application</strong><span style="font-weight: 400;">: collecting and delivering data in the real world.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">6 &ndash; </span><strong>Presentation</strong><span style="font-weight: 400;">: data conversions.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">5 &ndash; </span><strong>Session</strong><span style="font-weight: 400;">: manages connections.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">4 &ndash; </span><strong>Transport</strong><span style="font-weight: 400;">: packetizing and checking.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">3 &ndash; </span><strong>Network</strong><span style="font-weight: 400;">: transmission of packets, routing.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">2 &ndash; </span><strong>Data Link</strong><span style="font-weight: 400;">: access control, error detection and correction.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">1 &ndash; </span><strong>Physical</strong><span style="font-weight: 400;">: network devices and media.</span></span></li>
+</ul>
+<h2 dir="ltr">&nbsp;</h2>
+<p><span style="font-weight: 400; color: #ffffff;">(b) The internet structure</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>The TCP/IP Stack:&nbsp;</strong></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Suite of protocols cover </span><strong>data formatting, addressing, routing</strong><span style="font-weight: 400;"> and </span><strong>receiving</strong><span style="font-weight: 400;">. Equivalent to layers</span><strong> 7,4,3,2</strong><span style="font-weight: 400;"> of </span><strong>OSI model</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>4 layers of abstraction</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Layer</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Purpose</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Application (7)</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Capturing/delivering data &amp; packaging</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Transport (4)</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Establishment/termination of connections via routers</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Network (3)</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Provides transmission between different networks. Concerned with IP addressing and direction of datagrams.</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Link (2)</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Passes data onto physical network (Copper wire/optical fibre/wireless)</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong><br />(</strong><span style="font-weight: 400;">Domain Name System) </span><strong>DNS:</strong></strong></span></li>
+</ul>
+<ul>
+<li><strong>Hierarchical system </strong><span style="font-weight: 400;">for </span><strong>naming resources</strong><span style="font-weight: 400;"> on a network</span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Human readable equivalent to IP address (e.g </span><a style="color: #ffffff;" href="http://www.google.co.uk"><span style="font-weight: 400;">www.google.co.uk</span></a><span style="font-weight: 400;"> instead of 64.256.201.765)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Domain names translates </span><strong>URLs</strong><span style="font-weight: 400;"> to </span><strong>IP addresses</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">If server can&rsquo;t resolve it passes request </span><strong>recursively </strong><span style="font-weight: 400;">to another server which sends </span><strong>IP address</strong><span style="font-weight: 400;"> to </span><strong>browser </strong><span style="font-weight: 400;">so it can retrieve </span><strong>website hosted</strong><span style="font-weight: 400;"> from server.</span></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Protocol layering</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Form of </span><strong>abstraction</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Divides </span><strong>complex system</strong><span style="font-weight: 400;"> into </span><strong>component parts</strong><span style="font-weight: 400;"> of functionality</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Gradually allows work to be completed &amp; allows </span><strong>efficient problem solving</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Each layer </span><strong>communicates </strong><span style="font-weight: 400;">only with </span><strong>adjacent layers</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Layers of abstraction</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Layer</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Purpose</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Application (7)</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">The hardware that provides the connections.</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Network (3)</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Concerned with routes from sender to recipient.</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Physical (1)</strong></span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">Hardware that provides the connections</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong><br />Network Types (WAN/LAN etc)</strong></strong></span></li>
+</ul>
+<ul>
+<li><strong>Local Area Network (LAN)</strong><span style="font-weight: 400;">&nbsp;</span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Confined to one location (school/business)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Infrastructure maintained by organisations that owns it</span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Wide Area Network (WAN)</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Covers a large geographical area</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Makes use of communication providers (BT,Virgin)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Internet is a WAN but special case (multiplicity of users)</span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Packet and circuit switching</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Packet Switching</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Circuit Switching</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Connectionless node</span></li>
+</ul>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">3 Stages:</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">connection establishment</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">&nbsp;data transmission</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">&nbsp;connection termination.</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Divides message into data units called </span><strong>packets</strong></span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Exclusive </span><strong>dedicated channel </strong><span style="font-weight: 400;">which physically connects devices together</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Sent across the </span><strong>most efficient </strong><span style="font-weight: 400;">route (Not predetermined)</span></span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Suitable for </span><strong>intensive data transfer</strong></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">At each node = destination read = most convenient route taken</span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Packets </span><strong>remain in order</strong><span style="font-weight: 400;"> but </span><strong>reassembled </strong><span style="font-weight: 400;">at </span><strong>destination</strong></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Packets arrive </span><strong>out of order</strong><span style="font-weight: 400;"> ( reordered at destination)</span></span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">All packets go on </span><strong>same route</strong><span style="font-weight: 400;"> in order</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Only as </span><strong>fast </strong><span style="font-weight: 400;">as</span><strong> slowest packet</strong></span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Sets up route between </span><strong>2 computers</strong><span style="font-weight: 400;"> for duration of message</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Errors </span><strong>resubmitted </strong><span style="font-weight: 400;">if any occur</span></span></li>
+</ul>
+</td>
+<td rowspan="2">
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Ties up </span><strong>large areas of network</strong><span style="font-weight: 400;"> so no other data can use any part of the circuit until the </span><strong>transmission is complete</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Error checking</strong><span style="font-weight: 400;"> promotes</span><strong> successful transmission.</strong></span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;"><br />(c) Network security</span></p>
+<p><span style="color: #ffffff;"><strong>Authentication</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Protects users using a </span><strong>username &amp; password</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">As networks are more easily </span><strong>hacked </strong><span style="font-weight: 400;">into, new security systems implemented by using:</span></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Multiple credentials /smart cards/ biometric information (fingerprints/iris scans)</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<p><span style="color: #ffffff;"><strong>Firewalls</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Various </span><strong>combinations </strong><span style="font-weight: 400;">of </span><strong>hardware/software</strong><span style="font-weight: 400;"> that isolate a network from the outside world</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Configurable to </span><strong>deny access</strong><span style="font-weight: 400;"> to </span><strong>certain addresses/data</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Proxies</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Computers </span><strong>interposed </strong><span style="font-weight: 400;">between</span><strong> networks &amp; remote resource</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Control </span><strong>input/output</strong><span style="font-weight: 400;"> from a </span><strong>network</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Encryption</strong></span></p>
+<ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Most traffic is made </span><strong>unintelligible </strong><span style="font-weight: 400;">to </span><strong>unauthorised individuals</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Key is needed for </span><strong>sender to encrypt</strong><span style="font-weight: 400;"> and </span><strong>receiver to decrypt</strong></span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Bigger the key = more encryption</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Asymmetric key encryption</strong><span style="font-weight: 400;"> (Public/Private key)</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(d) Network hardware</span></p>
+<p><span style="color: #ffffff;"><strong>Network Interface Card/Controller</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Generates/Receives electrical signals</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Works at the physical/data link layers</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Router</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Device to connect networks</strong></strong></span></li>
+</ul>
+<ul>
+<li><strong>Receives/Forwards data packets</strong></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Directs packets to next device (Uses table/algorithm to decide route)</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>MAC address</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>48 bit identifier</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Permanently added to device by manufacturer</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Human readable </span><strong>group of 6 bytes</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Switches</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Devices to </span><strong>connect </strong><span style="font-weight: 400;">to other devices on networks</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Packet switching </strong><span style="font-weight: 400;">to send data to specific destinations (Using hardware addresses)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Operates at </span><strong>Lvl ⅔</strong><span style="font-weight: 400;"> of </span><strong>OSI&nbsp; mode</strong><span style="font-weight: 400;">l</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Hubs</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Connects </span><strong>nodes together </strong><span style="font-weight: 400;">by broadcasting a signal to all possible destinations</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Correct destination accepts signal</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Wireless Access Points</strong></span></p>
+<ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Usually </span><strong>connected to a router</strong></span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Data link layer</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Used to </span><strong>connect devices to Wifi</strong></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(e) Client-server and peer to peer</span></p>
+<p><span style="color: #ffffff;"><strong>Client server</strong></span></p>
+<ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>High end computers</strong><span style="font-weight: 400;"> act as </span><strong>servers</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Client </span><strong>computer requests services</strong><span style="font-weight: 400;"> from server</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Services provided: File storage/access, printing, internet access, security features (login)</span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Less complex = more accessible</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Computers don't have to be </span><strong>powerful/expensive</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Servers upgraded to fix </span><strong>security issues/provide</strong><span style="font-weight: 400;"> more features</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Peer-Peer Server</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">All computers =</span><strong> equal statu</strong><span style="font-weight: 400;">s</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Computers can act as </span><strong>client &amp;/ server</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Useful on internet so traffic can</span><strong> avoid servers</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Cheaper as its </span><strong>private </strong><span style="font-weight: 400;">so no expensive hardware/bandwidth needed</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">More likely to be </span><strong>fault tolerant</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>1.3.4 Web Technologies</strong></span></p>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">(a) HTML, CSS, JavaScript</span> <span style="font-weight: 400;">&nbsp;</span></span></p>
+<p><span style="color: #ffffff;"><strong>World Wide Web (WWW)</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Collection of </span><strong>billions </strong><span style="font-weight: 400;">of </span><strong>web pages</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Written in </span><strong>HTML </strong><span style="font-weight: 400;">(have hyperlinks)</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Tags to indicate how text is to be handled.</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Assets: </span><strong>Images/Videos/Forms/Applets</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Browsers</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Software that</span><strong> renders HTML pages</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Find </span><strong>web resources</strong><span style="font-weight: 400;"> by </span><strong>accepting URLs</strong><span style="font-weight: 400;"> and following links</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Find resources on </span><strong>private networks</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Browser examples: </span><strong>Chrome/Safari/Opera/IE/Firefox</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Standards</strong><span style="font-weight: 400;">: Set of guidelines used universally so all computers can access the same resources.</span></span></p>
+<p><span style="font-weight: 400; color: #ffffff;">Examples of standards</span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>HTML (Hyper Text Markup Language)</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Create web pages &amp; elements</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Has </span><strong>tags</strong><span style="font-weight: 400;">: Mark out elements on page to show browser how to process element</span></span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Links:</strong><span style="font-weight: 400;"> redirects user from current page to page referred by link</span></strong></span></li>
+</ul>
+<ul>
+<li><strong>CSS (Cascading Style Sheets)</strong></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Determines how </span><strong>tags affect objects</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Used to </span><strong>standardise </strong><span style="font-weight: 400;">an appearance of a webpage</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Changes made can </span><strong>affect whole site</strong><span style="font-weight: 400;"> instead of one page</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Content </strong><span style="font-weight: 400;">and </span><strong>formatting </strong><span style="font-weight: 400;">are kept </span><strong>separate</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Simpler </span><strong>HTML </strong><span style="font-weight: 400;">used as </span><strong>CSS </strong><span style="font-weight: 400;">can be used in </span><strong>multiple files</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Adjustable for </span><strong>different devices</strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>JavaScript</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Programing language which runs on </span><strong>browsers &amp; controls elements</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Embedded into </span><strong>HTML </strong><span style="font-weight: 400;">with &lt;script&gt; tags to add functionality such as:</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Validation/animation/Newer content</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Used on </span><strong>client side</strong><span style="font-weight: 400;"> = less strain on server &amp; server side as it can be amended</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Can run on any </span><strong>browser </strong><span style="font-weight: 400;">(normally interpreted)</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(b) Search engine indexing</span></p>
+<p><span style="color: #ffffff;"><strong>Search Engines</strong><span style="font-weight: 400;">: Web based software utilities that enable users to find resources on the web</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Builds </span><strong>indexes</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Uses </span><strong>algorithms </strong><span style="font-weight: 400;">to </span><strong>complete searches </strong><span style="font-weight: 400;">&amp; </span><strong>web-crawling bots</strong><span style="font-weight: 400;"> to collect indexes</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Supports many human languages</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Search Engine Indexing (SEI)</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is the process of </span><strong>collecting </strong><span style="font-weight: 400;">and</span><strong> storing data </strong><span style="font-weight: 400;">from </span><strong>websites </strong><span style="font-weight: 400;">so that a search engine can quickly </span><strong>match </strong><span style="font-weight: 400;">the content against </span><strong>search terms</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(c) PageRank algorithm</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Developed by </span><strong>Google</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Attempt to </span><strong>rank pages by usefulness/importance</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Takes into account: # of </span><strong>inward/outward links</strong><span style="font-weight: 400;"> &amp; # of sites that </span><strong>link </strong><span style="font-weight: 400;">to current site</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The PageRank of the linking sites &ndash; the algorithm iteratively calculates the </span><strong>importance </strong><span style="font-weight: 400;">of each site so that links from sites with a </span><strong>high importance</strong><span style="font-weight: 400;"> are given a </span><strong>higher ranking</strong><span style="font-weight: 400;"> than those linked from sites of low importance.</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(d) Server and client side processing</span></p>
+<p><span style="color: #ffffff;"><strong>Server Side Processing: </strong><span style="font-weight: 400;">Processing that takes place on the web server</span></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Pros</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Cons</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>High security</strong><span style="font-weight: 400;">: data sent to server for processing then sent back</span></span></li>
+</ul>
+</td>
+<td rowspan="3">
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Extra load </strong><span style="font-weight: 400;">on the server makes running the server </span><strong>more expensive</strong></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Hides code from user</strong><span style="font-weight: 400;"> to protect copyright &amp; being amended</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">No need to rely on browser having correct interpreter</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">Is best used where processing is </span><strong>integral </strong><span style="font-weight: 400;">e.g. generating content and accessing data including secure data so any data passed must be checked carefully.</span></span></p>
+<p><span style="color: #ffffff;"><strong>Client Side Processing: </strong><span style="font-weight: 400;">Processing that takes place on the web browser</span></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Pros</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Cons</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">More processing = Reduced load on server = Reduced data traffic</span></li>
+</ul>
+</td>
+<td rowspan="4">
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Code is visible so can be </span><strong>copied</strong></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Browser may not run the code as it doesn&rsquo;t have the</span><strong> capability/ user intentionally </strong><span style="font-weight: 400;">disabled client code</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Quick feedback </strong><span style="font-weight: 400;">to user</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">More </span><strong>responsive </strong><span style="font-weight: 400;">code</span></span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Data doesn't need to be sent to server and back</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;"><br />Is best used when it&rsquo;s not </span><strong>critical code</strong><span style="font-weight: 400;"> that runs. If it is critical then it should be carried out on the </span><strong>server</strong><span style="font-weight: 400;">. Is also best where</span><strong> quick feedback</strong><span style="font-weight: 400;"> to the user is needed &ndash; an example being games.</span></span><br /><br /></p>
+		</center>
+    </div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

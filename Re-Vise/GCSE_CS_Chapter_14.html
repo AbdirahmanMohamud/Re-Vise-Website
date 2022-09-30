@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+		h1{
+			color: white;
+		}
+		h2{
+			color: white;
+		}
+		p{
+			color: white;
+		}
+		table{
+			color: white;
+		}
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your GCSE CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">GCSE CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping GCSE students with learning new skills and applying them in examination</p>
+		<h1>Data Represntation</h1>
+		<p>
+<p>In a computer, everything is made up of switches. These switches are either on (1) or off (0). A single binary number or binary digit is called a bit. Half of a binary number is called a nibble and a group of 8 bits is called a byte.</p>
+<p>8 bits	1 byte	8 (0’s/1’s)</p>
+<p>1024 bytes	1 kilobyte	Roughly 1000 bytes 8192 (0’s/1’s)</p>
+<p>1024 kilobytes	1 megabyte	Roughly 1 million bytes</p>
+<p>1024 megabytes	1 gigabyte	Roughly I billion bytes</p>
+<p>1024 gigabytes	1 terabyte	Roughly 1 trillion bytes</p>
+<p>1024 terabytes	1 petabyte	Roughly 1 quadrillion bytes</p>
+
+<p>Numbers are represented in a binary system by having a table with numbers at the top to represent 1,2,4,8,16,32,64 and 128. Then, a 1 or 0 is placed to show whether the switch is on and so that all of the on switches add up to the number you want.</p>
+<p>An example would be this:</p>
+<p>128	64	32	16	8	4	2	1</p>
+<p>0	1	0	1	1	0	0	1</p>
+
+<p>This number in denary (normal numbers with a base of 10) would be 64 + 16 + 8 + 1. This is equal to 89.</p>
+<p>Binary Addition works with that 1 + 1 equalling 10 as in binary 10 is equal to 2. Then 0 is placed and the 1 is carried over. 1 + 1 + 1 = 11 as 11 is equal to 3 in binary. </p>
+<p>An example of this would be:</p>
+<p>0	0	1	1	0	0	1	1</p>
+<p>1	0	0	0	1	1	1	1</p>
+<p>1	1	0	0	0	0	1	0</p>
+ 
+<p>We know that this is correct as if you converted the two binary numbers to denary numbers, added them and then converted that number to binary, it would equal this.</p>
+<p>Also, there are binary shifts. These work as a LEFT BINARY SHIFT would double the number as every on switch would double in capacity. A RIGHT BINARY SHIFT would do the opposite and half the number.</p>
+<p>Hexadecimal is another way of representing numbers in a computer system outside of binary. The way that denary numbers are converted to hexadecimal is that instead of 1,2,4,8 etc., the way that numbers are converted are in powers of 16 so 16,256 etc.</p>
+<p>An example would be to convert 20 into hexadecimal. Since 16 fits in 20, then 1 is in the 16 column and since 1 fits into 4 4 times, then 4 is in the 1 column so the number in hexadecimal is 14.</p>
+<p>Hexadecimal goes from 1 to 9 and then A-F such as it looks like this:</p>
+<p>Base 10	Base 2 	Base 16</p>
+<p>0	0		0</p>
+<p>1	1		1</p>
+<p>2	10		2</p>
+<p>3	11		3</p>
+<p>4	100		4</p>
+<p>5	101		5</p>
+<p>6	110		6</p>
+<p>7	111		7</p>
+<p>8	1000	8</p>
+<p>9	1001	9</p>
+<p>10	1010	A</p>
+<p>11	1011	B</p>
+<p>12	1100	C</p>
+<p>13	1101	D</p>
+<p>14	1110	E</p>
+<p>15	1111	F</p>
+
+<p>The method to convert denary to hexadecimal is to:</p>
+<p>•	Count how many 16s fit into the number</p>
+<p>•	Place the answer in the 16s column</p>
+<p>•	Place the remainder in the 1s column</p>
+<p>Another way to help with the conversion of binary to hexadecimal is to split the binary number into two nibbles. After this, the left nibble is your left hex number and the right nibble is your right hex number. An example of this would be:</p>
+<p>128	64	32	16	8	4	2	1</p>
+<p>1	1	0	0	1	1	0	1</p>
+
+<p>This splits to form:</p>
+<p>8	4	2	1</p>
+<p>1	1	0	0</p>
+<p>8	4	2	1</p>
+<p>1	1	0	1</p>
+  
+
+
+<p>In 1960, the American Standard Association agreed on a set of codes to represent the main characters in the English language. This is now known as ASCII (American Standard Code for Information Interchange)</p>
+<p>The ASCII character set is as follows:</p>
+<p>Letters of the alphabet (lower case)	26</p>
+<p>Letters of the alphabet (upper case)	26</p>
+<p>All numeric symbols	10</p>
+<p>Punctuation, symbols and ‘space’	33</p>
+<p>32 codes reserved for non-printable control codes	32</p>
+<p>	95 (printable)</p>
+<p>32 (non-printable)</p>
+<p>127 in total</p>
+
+<p>Since ASCII requires 127 different codes, it runs on a 7 bit system instead of binary and the 8 bits</p>
+<p>The problem with ASCII is that it only really works with English as it was designed specifically for that language so languages with more characters than English such as Mandarin and Japanese don’t work with the ASCII work frame.</p>
+UNICODE works as an alternate for ASCII as it works with 2 sets of 16 bits instead of ASCII’s 7 bits which means that it makes far more sense to languages with more characters than English.</p>
+<p>The Representation of Images:</p>
+<p>Bitmap images work by being made up of rows of ‘dots’ called ‘pixels’ (picture elements). Each pixel is represented by a binary number. 8-bit displays work better than 1 bit displays due to the colours that 256 bits can provide.</p>
+<p>Dots per Inch or Resolution works by the amount of pixels that can be seen at one time. The higher the DPI, the more defined image you see because of it. However, this results in more data and a larger file size.</p>
+<p>Colour depth is the amount of colours that each pixel can choose to be for a more realistic looking image. The greater the number of colours in the image, the better the quality but the more storage space is taken to save the image and the more memory (RAM) is needed to display the image.</p>
+<p>Metadata is essentially data about data and is the information that an image comes with. This is typically the colour depth, width, height, resolution and Image ID.</p>
+<p>The equation to find the file size of an image is:</p>
+<p>Height X Width X Colour Depth</p>
+<p>In other words, it is Resolution X Colour Depth</p>
+<p>There are two ways that sound is stored. Either analogue which is physically how humans listen to sound with pure sound waves of perfect quality. However a computer can never record a sound pure or in perfect quality. As a result, digital sound is how computers listen. What occurs is sampling which is when at set intervals, sound is measured for an overall sound that is mostly the same.</p>
+<p>What a sound file is composed of is:</p>
+<p>•	The sample rate which is how many times a sound is sampled in a disc. An example would be in a typical CD, music is sampled 44,100 times a second or 44.1 kHz. This is done over 1 or 2 channels. 1 is mono, 2 is stereo.</p>
+<p>•	Bit rate is the number of bits that are stored in each sample. An example would be that for every sample, 16 bits are stored.</p>
+<p>The equation to find out the file size of an audio CD:</p>
+<p>Sample rate X bit depth X number of channels X length of recording</p>
+
+</p>
+		</div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

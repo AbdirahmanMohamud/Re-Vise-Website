@@ -1,0 +1,60 @@
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.login-box{
+			width: 280px;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color:white;
+				
+		}
+		.login-box h1{
+			float: left;
+			font-size: 40px;
+			border-bottom: 6px solid;
+			margin-bottom: 50px;
+			padding: 13px 0
+		}
+		.textbox{
+			width: 100%;
+			overflow: hidden;
+			font-size: 20px;
+			padding: 8px 0;
+			margin: 8px 0;
+			border-bottom: 1px solid;
+		}
+		.textbox i{
+			width: 26px;
+			float: left;
+			text-align: center;
+		}
+		.textbox input{
+			border: none;
+			outline: none;
+			background: none;
+			color: white;
+			font-size: 18px;
+			width: 150px;
+			lfoat: left;
+			margin: 10px;
+		}

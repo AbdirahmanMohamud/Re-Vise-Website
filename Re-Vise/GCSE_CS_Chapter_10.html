@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+		h1{
+			color: white;
+		}
+		h2{
+			color: white;
+		}
+		p{
+			color: white;
+		}
+		table{
+			color: white;
+		}
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your GCSE CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">GCSE CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping GCSE students with learning new skills and applying them in examination</p>
+		<h1>Programming Techniques</h1>
+		<p>Sequence:</p>
+<p>Is in a program and is how it leads to the next ordered action in a predetermined order and this is typically done with an array</p>
+<p>Selection:</p>
+<p>Also called a decision and is when a program differs depending on an input and is made by an if/else statement</p>
+<p>Iteration:</p>
+<p>This is when in a program, certain elements are repeated so that it can perform a certain task. In python, this is commonly done with a ‘for’ loop or a ‘while’ loop</p>
+<p>String Manipulation:</p>
+<p>This is when an input is manipulated in one of many ways to fit a certain purpose of the programmer. There are numerous examples of this which include:</p>
+<p>•	Len(variable) to show how long a string is in terms of how many characters there are</p>
+<p>•	(variable[number of position]) to find the letter at that specific location in a string</p>
+<p>•	Variable.isupper() to find if the variable is in all caps</p>
+<p>•	Variable.islower() to find if the variable is in all lowercase</p>
+<p>•	Variable.isalnum() to find if the variable is alphanumeric</p>
+<p>•	Variable.isalpha() to find if the variable contains only letters</p>
+<p>•	Variable.isdigit() to find if the variable contains only numbers</p>
+<p>File Handling:</p>
+<p>In Python, you are able to store data in text files outside of the program and to write into those files mid program and to read from those files in a program to output them in the program itself. The way that this is done is like so, if you want to write into a text file:</p>
+<p>1.	First you create the file and open it in write mode using the ‘open()’ function like so:</p>
+<p>Newfile = open(“The New File.txt”,”w”)</p>
+<p>2.	Then you can write into the file as like so:</p>
+<p>Newfile.write(“Hello World”)</p>
+<p>3.	Finally, you have to close the file like this:</p>
+<p>Newfile.close()</p>
+<p>Now if you want to read from the file, this is what you do:</p>
+<p>1.	You need to open the file in Python using the ‘open()’ function:</p>
+<p>Newfile = open(“The New File.txt”)</p>
+<p>2.	You then can read the file with the following:</p>
+<p>Print(newfile.read())</p>
+<p>3.	The output should be what has already been entered into the file such as:</p>
+<p>Hello World</p>
+<p>SQL:</p>
+<p>SQL is a language that is commonly used in databases in the manipulation of databases to add, remove and change. The way that this is typically done in Python to connect a database is like so:</p>
+<p>1.	First you need to import the function of SQL like so:</p>
+<p>Import sqlite3</p>
+<p>2.	Then you need to connect the python file to the SQL database like so:</p>
+<p>New_db = sqlite3.connect(“new_db.db”)</p>
+<p>3.	Next, you need to use a cursor object to start working with the SQL:</p>
+<p>C = new_db.cursor()</p>
+<p>4.	Now you can execute an instruction in Python like so:</p>
+<p>c.execute(‘’’CREATE TABLE Students</p>
+(student_firstname text,</p>
+Student_surname text,</p>
+Student_DOB text,</p>
+Form text)</p>
+<p>‘’’)</p>
+<p>5.	Finally, you need to commit and close the SQL program by committing the changes to the program like so:</p>
+<p>New_db.commit()</p>
+<p>New_db.close()</p>
+<p>Arrays:</p>
+<p>An array is an example of a data structure which allows us to store more than one item of data together under one identifier which can be used to access the individual items of the data. An array is a collection of data which has the same data type. A list can contain data that isn’t all the same data type. An array uses a static area of memory whilst a list uses memory dynamically so different areas of memory can be used. The way that a list can be formed:</p>
+<p>List = [“Train”, ”Car”, “Foot”, “Bus”, “Taxi”]</p>
+<p>You can also change lists in many ways, such as:</p>
+<p>•	List.reverse() to reverse the order of the list</p>
+<p>•	List.sort() to sort the list into alphabetical or numerical order</p>
+<p>•	List.append() to add items on to the end</p>
+<p>•	List.remove() to remove items from the list</p>
+<p>•	List.index() to find the position of an item on the list</p>
+<p>•	List.pop() to ‘Pop’ an item out of the list</p>
+<p>Data Types</p>
+<p>Data is classified into types, such as a set of whole numbers (also known as integers) or a set of printing characters.</p>
+<p>Different types of data are represented in different ways inside a computer and need varying amounts of memory to store them. They also have different operations that can be performed upon them. All values that belong to the same data type will be represented in the same way.</p>
+
+		</div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

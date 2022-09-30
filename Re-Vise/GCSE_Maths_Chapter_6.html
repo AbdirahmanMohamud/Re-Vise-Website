@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+		h1{
+			color: white;
+		}
+		h2{
+			color: white;
+		}
+		p{
+			color: white;
+		}
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your GCSE Maths Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">GCSE Maths</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping GCSE students with learning new skills and applying them in examination</p>
+<h2 class="pane-title"><span style="color: #ffffff;">Probability</span></h2>
+<div class="pane-content">
+<div id="node-33" class="node node-mathsrevision clearfix">
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<p><span style="color: #ffffff;"><u><strong>Introduction</strong></u></span></p>
+<p><span style="color: #ffffff;">Probability is the likelihood or chance of an event occurring.</span></p>
+<table>
+<tbody>
+<tr>
+<td><span style="color: #ffffff;">Probability =</span></td>
+<td><span style="color: #ffffff;">&nbsp;<u>the number of ways of achieving success</u></span></td>
+</tr>
+<tr>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+<td><span style="color: #ffffff;">&nbsp;the total number of possible outcomes</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #ffffff;">For example, the probability of flipping a coin and it being heads is &frac12;, because there is 1 way of getting a head and the total number of possible outcomes is 2 (a head or tail). We write P(heads) = &frac12; .</span></p>
+<div align="justify">
+<ul>
+<li><span style="color: #ffffff;">The probability of something which is certain to happen is 1.</span></li>
+<li><span style="color: #ffffff;">The probability of something which is impossible to happen is 0.</span></li>
+<li><span style="color: #ffffff;">The probability of something not happening is 1 minus the probability that it will happen.</span></li>
+</ul>
+<p><span style="color: #ffffff;"><u><strong>Single Events</strong></u></span></p>
+<p><span style="color: #ffffff;"><strong>E</strong><strong>xample</strong></span></p>
+<p><span style="color: #ffffff;">There are 6 beads in a bag, 3 are red, 2 are yellow and 1 is blue. What is the probability of picking a yellow?</span></p>
+<p><span style="color: #ffffff;">The probability is the number of yellows in the bag divided by the total number of balls, i.e. 2/6 = 1/3.</span></p>
+<p><span style="color: #ffffff;"><strong>E</strong><strong>xample</strong></span></p>
+<p><span style="color: #ffffff;">There is a bag full of coloured balls, red, blue, green and orange. Balls are picked out and replaced. John did this 1000 times and obtained the following results:</span></p>
+<ul>
+<li><span style="color: #ffffff;">Number of blue balls picked out: 300</span></li>
+<li><span style="color: #ffffff;">Number of red balls: 200</span></li>
+<li><span style="color: #ffffff;">Number of green balls: 450</span></li>
+<li><span style="color: #ffffff;">Number of orange balls: 50</span></li>
+</ul>
+<p><span style="color: #ffffff;">a) What is the probability of picking a green ball?</span></p>
+<p><span style="color: #ffffff;"><em>For every 1000 balls picked out, 450 are green. Therefore P(green) = 450/1000 = 0.45</em></span></p>
+<p><span style="color: #ffffff;">b) If there are 100 balls in the bag, how many of them are likely to be green?</span></p>
+<p><span style="color: #ffffff;"><em>The experiment suggests that 450 out of 1000 balls are green. Therefore, out of 100 balls, 45 are green (using ratios).</em></span></p>
+<p><span style="color: #ffffff;"><u><strong>Multiple Events</strong></u></span></p>
+<p><span style="color: #ffffff;"><strong>Independent and Dependent Events</strong></span></p>
+<p><span style="color: #ffffff;">Suppose now we consider the probability of 2 events happening. For example, we might throw 2 dice and consider the probability that both are 6's.</span></p>
+<p><span style="color: #ffffff;">We call two events&nbsp;<strong>independent</strong>&nbsp;if the outcome of one of the events doesn't affect the outcome of another. For example, if we throw two dice, the probability of getting a 6 on the second die is the same, no matter what we get with the first one- it's still 1/6.</span></p>
+<p><span style="color: #ffffff;">On the other hand, suppose we have a bag containing 2 red and 2 blue balls. If we pick 2 balls out of the bag, the probability that the second is blue depends upon what the colour of the first ball picked was. If the first ball was blue, there will be 1 blue and 2 red balls in the bag when we pick the second ball. So the probability of getting a blue is 1/3. However, if the first ball was red, there will be 1 red and 2 blue balls left so the probability the second ball is blue is 2/3. When the probability of one event depends on another, the events are&nbsp;<strong>dependent</strong>.</span></p>
+<p><span style="color: #ffffff;"><u><strong>Probability Trees</strong></u></span></p>
+<p><span style="color: #ffffff;">Another way of representing 2 or more events is on a probability tree.</span></p>
+<p><span style="color: #ffffff;"><u><strong>The AND and OR rules (HIGHER TIER)</strong></u></span></p>
+<p><span style="color: #ffffff;">In the above example, the probability of picking a red first is 1/3 and a yellow second is 1/2. The probability that a red AND then a yellow will be picked is 1/3 &times;&nbsp;1/2 = 1/6 (this is shown at the end of the branch). The rule is:</span></p>
+<ul>
+<li><span style="color: #ffffff;">If two events A and B are independent (this means that one event does not depend on the other), then the probability of both A&nbsp;<em>and</em>&nbsp;B occurring is found by multiplying the probability of A occurring by the probability of B occurring.</span></li>
+</ul>
+<p><span style="color: #ffffff;">The probability of picking a red OR yellow first is 1/3 + 1/3 = 2/3. The rule is:</span></p>
+<ul>
+<li><span style="color: #ffffff;">If we have two events A and B and it isn't possible for both events to occur, then the probability of A or B occuring is the probability of A occurring + the probability of B occurring.</span></li>
+</ul>
+<p><span style="color: #ffffff;">On a probability tree, when moving from left to right we multiply and when moving down we add.</span></p>
+<p><span style="color: #ffffff;"><strong>E</strong><strong>xample</strong></span></p>
+<p><span style="color: #ffffff;">What is the probability of getting a yellow and a red in any order?</span><br /><span style="color: #ffffff;">This is the same as: what is the probability of getting a yellow AND a red OR a red AND a yellow.</span><br /><span style="color: #ffffff;">P(yellow and red) = 1/3 &times;&nbsp;1/2 = 1/6</span><br /><span style="color: #ffffff;">P(red and yellow) = 1/3 &times;&nbsp;1/2 = 1/6</span><br /><span style="color: #ffffff;">P(yellow and red or red and yellow) = 1/6 + 1/6 = 1/3</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="pane-title"><span style="color: #ffffff;">Averages</span></h2>
+<div class="pane-content">
+<div id="node-34" class="node node-mathsrevision clearfix">
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<p><span style="color: #ffffff;">This section looks at averages.</span></p>
+<p><span style="color: #ffffff;"><u><strong>Mean</strong></u></span></p>
+<p><span style="color: #ffffff;">There are three main types of average:</span></p>
+<ul>
+<li><span style="color: #ffffff;"><strong>mean</strong>&nbsp;-&nbsp; The mean is what most people mean when they say 'average'. It is found by adding up all of the numbers you have to find the mean of, and dividing by the number of numbers. So the mean of 3, 5, 7, 3 and 5 is 23/5 = 4.6 .</span></li>
+<li><span style="color: #ffffff;"><strong>mode -&nbsp;</strong>The mode is the number in a set of numbers which occurs the most. So the modal value of 5, 6, 3, 4, 5, 2, 5 and 3 is 5, because there are more 5s than any other number.</span></li>
+<li><span style="color: #ffffff;"><strong>median</strong>&nbsp;- The median of a group of numbers is the number in the middle, when the numbers are in order of magnitude. For example, if the set of numbers is 4, 1, 6, 2, 6, 7, 8, the median is 6</span></li>
+</ul>
+<p><span style="color: #ffffff;"><u><strong>Grouped Data</strong></u></span></p>
+<p><span style="color: #ffffff;">When you are given data which has been grouped, you can't work out the mean exactly because you don't know what the values are exactly (you just know that they are between certain values). However, we calculate an estimate of the mean with the formula: &sum;fx / &sum;f , where f is the frequency and x is the midpoint of the group (&sum; means 'the sum of').</span></p>
+<p><span style="color: #ffffff;"><u><strong>Moving Averages</strong></u></span></p>
+<p><span style="color: #ffffff;">A moving average is used to compare a set of figures over time. For example, suppose you have measured the weight of a child over an eight year period and have the following figures (in kg):</span><br /><span style="color: #ffffff;">32, 33 ,35, 38, 43, 53, 63 ,65</span></p>
+<p><span style="color: #ffffff;">Taking the mean doesn't give us much useful information. However, we could take the average of each 3 year period. These are the 3-year moving averages.</span><br /><span style="color: #ffffff;">The first is: (32 + 33 + 35)/3 = 33.3</span><br /><span style="color: #ffffff;">The second is: (33 + 35 + 38)/3 = 35.3</span><br /><span style="color: #ffffff;">The third is: (35 + 38 + 43)/3 = 38.7, and so on (there are 3 more!).</span></p>
+<p><span style="color: #ffffff;">To calculate the 4 year moving averages, you'd do 4 years at a time instead, and so on...</span></p>
+<p><span style="color: #ffffff;"><u><strong>Mode</strong></u></span></p>
+<p><span style="color: #ffffff;">The mode is the number in a set of numbers which occurs the most. So the modal value of 5, 6, 3, 4, 5, 2, 5 and 3 is 5, because there are more 5s than any other number.</span></p>
+<p><span style="color: #ffffff;"><u><strong>Range</strong></u></span></p>
+<p><span style="color: #ffffff;">The range is the largest number in a set minus the smallest number. So the range of 5, 7, 9 and 14 is (14 - 5) = 9. The range gives you an idea of how spread out the data is.</span></p>
+<p><span style="color: #ffffff;"><u><strong>The Median Value</strong></u></span></p>
+<p><span style="color: #ffffff;">The median of a group of numbers is the number in the middle, when the numbers are in order of magnitude. For example, if the set of numbers is 4, 1, 6, 2, 6, 7, 8, the median is 6:</span><br /><span style="color: #ffffff;">1, 2, 4,&nbsp;<strong>6</strong>, 6, 7, 8 &nbsp; &nbsp; &nbsp;(6 is the middle value when the numbers are in order)</span><br /><span style="color: #ffffff;">If you have n numbers in a group, the median is the (n + 1)/2 th value. For example, there are 7 numbers in the example above, so replace n by 7 and the median is the (7 + 1)/2 th value = 4th value. The 4th value is 6.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="pane-title"><span style="color: #ffffff;">Standard Deviation</span></h2>
+<div class="pane-content">
+<div id="node-35" class="node node-mathsrevision clearfix">
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<p><span style="color: #ffffff;">The&nbsp;<strong>standard deviation</strong>&nbsp;measures the spread of the data about the&nbsp;<strong>mean value</strong>. It is useful in comparing sets of data which may have the same mean but a different range. For example, the mean of the following two is the same: 15, 15, 15, 14, 16 and 2, 7, 14, 22, 30. However, the second is clearly more spread out. If a set has a low standard deviation, the values are not spread out too much.</span></p>
+<p><span style="color: #ffffff;">Just like when working out the mean, the method is different if the data is given to you in groups.</span></p>
+<p>&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="pane-title"><span style="color: #ffffff;">Sampling</span></h2>
+<div class="pane-content">
+<div id="node-36" class="node node-mathsrevision clearfix">
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<p><span style="color: #ffffff;"><strong>Sampling</strong>&nbsp;basically means selecting people/objects from a population in order to test the population for something. For example, we might want to find out how people are going to vote at the next election. Obviously we can't ask everyone in the country, so we ask a sample.&nbsp;</span></p>
+<p><span style="color: #ffffff;">When considering a particular population it is usually advisable to choose a sample in such a way that everyone is represented. This is not easy and requires careful thought about sample size and composition. Often questionnaires are devised to identify the required information. These need to be idiot proof, so questions need to cover all alternatives and give little scope for variation.</span></p>
+<p><span style="color: #ffffff;"><em><strong>Example question</strong></em></span></p>
+<p><span style="color: #ffffff;">A bus company attempted to estimate the number of people who travel on local buses in a certain town. They telephoned 100 people in the town one evening and asked 'Have you travelled by bus in the last week?'</span></p>
+<p><span style="color: #ffffff;">Nineteen people said 'Yes'. The bus company concluded that 19% of the town's population travel on local buses.</span></p>
+<p><span style="color: #ffffff;">Give 3 criticisms of this method of estimation.</span></p>
+<p><span style="color: #ffffff;">In answering this question, there are no 3 correct answers. As long as what you say is plausible and sensible, you should get the marks. For example, you might say:</span></p>
+<ul>
+<li><span style="color: #ffffff;">100 people in a large town is not a large enough proportion of the population to give a good sample.</span></li>
+<li><span style="color: #ffffff;">People who travel on local buses once a fortnight may have said no to the question. They nevertheless travel on local buses.</span></li>
+<li><span style="color: #ffffff;">On the evening that the sample was carried out, anybody travelling by bus would be out.</span></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="pane-title"><span style="color: #ffffff;">Cumulative Frequency Graphs</span></h2>
+<div class="pane-content">
+<div id="node-37" class="node node-mathsrevision clearfix">
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<p><span style="color: #ffffff;"><u><strong>Cumulative Frequency</strong></u></span></p>
+<p><span style="color: #ffffff;">Cumulative frequency is the running total of the frequencies. On a graph, it can be represented by a cumulative frequency polygon, where straight lines join up the points, or a cumulative frequency curve.</span></p>
+<p><span style="color: #ffffff;"><strong>Example</strong></span></p>
+<table border="0" width="481">
+<tbody>
+<tr>
+<td width="97"><span style="color: #ffffff;">Frequency:</span></td>
+<td width="108"><span style="color: #ffffff;">Cumulative Frequency:</span></td>
+<td width="256"><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="97"><span style="color: #ffffff;">4</span></td>
+<td width="108"><span style="color: #ffffff;">4</span></td>
+<td width="256"><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td width="97"><span style="color: #ffffff;">6</span></td>
+<td width="108"><span style="color: #ffffff;">10</span></td>
+<td width="256"><span style="color: #ffffff;">(4 + 6)</span></td>
+</tr>
+<tr>
+<td width="97"><span style="color: #ffffff;">3</span></td>
+<td width="108"><span style="color: #ffffff;">13</span></td>
+<td width="256"><span style="color: #ffffff;">(4 + 6 + 3)</span></td>
+</tr>
+<tr>
+<td width="97"><span style="color: #ffffff;">2</span></td>
+<td width="108"><span style="color: #ffffff;">15</span></td>
+<td width="256"><span style="color: #ffffff;">(4 + 6 + 3 + 2)</span></td>
+</tr>
+<tr>
+<td width="97"><span style="color: #ffffff;">6</span></td>
+<td width="108"><span style="color: #ffffff;">21</span></td>
+<td width="256"><span style="color: #ffffff;">(4 + 6 + 3 + 2 + 6)</span></td>
+</tr>
+<tr>
+<td width="97"><span style="color: #ffffff;">4</span></td>
+<td width="108"><span style="color: #ffffff;">25</span></td>
+<td width="256"><span style="color: #ffffff;">(4 + 6 + 3 + 2 + 6 + 4)</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #ffffff;"><u><strong>The Median Value</strong></u></span></p>
+<p><span style="color: #ffffff;">The median of a group of numbers is the number in the middle, when the numbers are in order of magnitude. For example, if the set of numbers is 4, 1, 6, 2, 6, 7, 8, the median is 6:</span><br /><span style="color: #ffffff;">1, 2, 4,&nbsp;<strong>6</strong>, 6, 7, 8 &nbsp; &nbsp; &nbsp;(6 is the middle value when the numbers are in order)</span><br /><span style="color: #ffffff;">If you have n numbers in a group, the median is the (n + 1)/2 th value. For example, there are 7 numbers in the example above, so replace n by 7 and the median is the (7 + 1)/2 th value = 4th value. The 4th value is 6.</span></p>
+<p><span style="color: #ffffff;">When dealing with a cumulative frequency curve, "n" is the cumulative frequency (25 in the above example). Therefore the median would be the 13th value. To find this, on the cumulative frequency curve, find 13 on the y-axis (which should be labelled cumulative frequency). The corresponding 'x' value is an estimation of the median.</span></p>
+<p><span style="color: #ffffff;"><u><strong>Quartiles</strong></u></span></p>
+<p><span style="color: #ffffff;">If we divide a cumulative frequency curve into quarters, the value at the lower quarter is referred to as the lower quartile, the value at the middle gives the median and the value at the upper quarter is the upper quartile.</span><br /><span style="color: #ffffff;">A set of numbers may be as follows: 8, 14, 15, 16, 17, 18, 19, 50. The mean of these numbers is 19.625 . However, the extremes in this set (8 and 50) distort this value. The interquartile range is a method of measuring the spread of the middle 50% of the values and is useful since it ignore the extreme values.</span></p>
+<p><span style="color: #ffffff;">The lower quartile is (n+1)/4 th value (n is the cumulative frequency, i.e. 157 in this case) and the upper quartile is the 3(n+1)/4 the value. The difference between these two is the interquartile range (IQR).</span><br /><span style="color: #ffffff;">In the above example, the upper quartile is the 118.5th value and the lower quartile is the 39.5th value. If we draw a cumulative frequency curve, we see that the lower quartile, therefore, is about 17 and the upper quartile is about 37. Therefore the IQR is 20 (bear in mind that this is a rough sketch- if you plot the values on graph paper you will get a more accurate value).</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="pane-title"><span style="color: #ffffff;">Representing Data</span></h2>
+<div class="pane-content">
+<div id="node-38" class="node node-mathsrevision clearfix">
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<p><span style="color: #ffffff;">There are a number of ways of representing data diagrammatically.&nbsp;</span></p>
+<p><span style="color: #ffffff;"><u><strong>Scatter Graphs</strong></u></span></p>
+<p><span style="color: #ffffff;">These are used to compare two sets of data. One set of data is put on the x-axis (the horizontal axis) and the other on the y-axis (the vertical axis). If one set of data depends upon the other, this is put on the y-axis (and is known as the 'dependent variable'). For example, if you were plotting a child's height at various times, the height would depend upon the time and so the height is the dependent variable and goes on the y-axis, whereas time doesn't depend on anything and so is the independent variable and goes on the x-axis.</span></p>
+<p><span style="color: #ffffff;">Usually, we are looking to see if there is a relationship between the two sets of data. We draw a line of best fit. This should have roughly the same number of points above and below it.</span><br /><span style="color: #ffffff;">The less scatter there is about the best-fit line, the stronger the relationship is between the two quantities. If the points are close to the best-fit line, we say that there is a strong&nbsp;<strong>correlation</strong>. If the points are loosely scattered, there is a weak correlation. We say there is&nbsp;<strong>zero correlation</strong>&nbsp;if there is no linear relationship between the variables- in other words if we can't draw a meaningful best fit line.</span></p>
+<p><span style="color: #ffffff;">Also, if the best fit line slopes upwards, like it does below, then the things we are comparing go up together. We say that there is a&nbsp;<strong>positive correlation</strong>. If the line slopes down, the 'dependent variable' decreases as the 'independent variable' increases. We say there is a negative correlation.</span></p>
+<p><span style="color: #ffffff;"><u><strong>Stem and Leaf Diagrams</strong></u></span></p>
+<p><span style="color: #ffffff;">A stem and leaf diagram is a way of grouping your data into classes. The good thing about it is that from the diagram you can obtain the original data- so no information is lost.</span></p>
+<p><span style="color: #ffffff;"><strong>Example</strong></span></p>
+<p><span style="color: #ffffff;">Suppose you have the heights of 20 people as follows:</span></p>
+<p><span style="color: #ffffff;">154, 143, 148, 139, 143, 147, 153, 162, 136, 147, 144, 143, 139, 142, 143, 156, 151, 164, 157, 149, 146</span></p>
+<p><span style="color: #ffffff;">First decide upon what you want the classes (groups) to be, choosing classes of equal width. We might, for example, choose our classes to have a width of 5 and have the following classes:</span></p>
+<p><span style="color: #ffffff;">135 - 139</span><br /><span style="color: #ffffff;">140 - 144</span><br /><span style="color: #ffffff;">145 - 149</span><br /><span style="color: #ffffff;">150 - 154</span><br /><span style="color: #ffffff;">155 - 159</span><br /><span style="color: #ffffff;">160 - 164</span></p>
+<p><span style="color: #ffffff;">We can easily see which heights fall into which classes:</span></p>
+<p><span style="color: #ffffff;">135 - 139: 139, 136, 139</span><br /><span style="color: #ffffff;">140 - 144: 143, 143, 144, 143, 142, 143</span><br /><span style="color: #ffffff;">145 - 149: 148, 147, 147, 149, 146</span><br /><span style="color: #ffffff;">150 - 154: 154, 153, 151</span><br /><span style="color: #ffffff;">155 - 159:&nbsp; 156, 157</span><br /><span style="color: #ffffff;">160 - 164: 162, 164</span></p>
+<p><span style="color: #ffffff;">What we have here is almost a stem and leaf diagram. Note that with the data written in this way you can see what the modal class is (the one with the most values- it is 140-144). You can also see the shape of the distribution- most of the values are in the 140s with higher or lower values rarer.</span></p>
+<p><span style="color: #ffffff;">To change this into a proper stem and leaf diagram, we just simplify it a little. Instead of writing out the full figures each time (143, 143, 144, 143, ...) we write '14' and call this the 'stem' and then write 3, 3, 4, 3, ... (these being the 'leaves'). We would usually, however, write the leaves in order (with the smallest first). Finally, we must also include a little key so that people know how to interpret the diagram.</span></p>
+<p><span style="color: #ffffff;"><u><strong>Bar Chart</strong></u></span></p>
+<p><span style="color: #ffffff;">A bar chart is a chart where the height of bars represents the frequency. The data is 'discrete' (discontinuous- unlike&nbsp;<strong>histograms</strong>&nbsp;where the data is continuous). The bars should be separated by small gaps.</span></p>
+<p><span style="color: #ffffff;"><u><strong>Pie Chart</strong></u></span></p>
+<p><span style="color: #ffffff;">A pie chart is a circle which is divided into a number of parts.</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="pane-title"><span style="color: #ffffff;">Histograms</span></h2>
+<div class="pane-content">
+<div id="node-39" class="node node-mathsrevision clearfix">
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<div class="higher">
+<div class="pane-content">
+<div id="node-39" class="node node-mathsrevision clearfix">
+<div class="content">
+<div class="field field-name-body field-type-text-with-summary field-label-hidden">
+<div class="field-items">
+<div class="field-item even">
+<div class="higher">
+<p><span style="color: #ffffff;">Histograms are similar to bar charts apart from the consideration of areas. In a bar chart, all of the bars are the same width and the only thing that matters is the height of the bar. In a histogram, the area is the important thing.</span></p>
+<p><span style="color: #ffffff;"><em><strong>Example</strong></em></span></p>
+<p><span style="color: #ffffff;">Draw a histogram for the following information.</span></p>
+<table border="0">
+<tbody>
+<tr>
+<td><span style="color: #ffffff;">Height (feet):&nbsp;</span></td>
+<td><span style="color: #ffffff;">Frequency&nbsp;</span></td>
+<td><span style="color: #ffffff;">Relative Frequency</span></td>
+</tr>
+<tr>
+<td><span style="color: #ffffff;">0-2</span></td>
+<td><span style="color: #ffffff;">0</span></td>
+<td><span style="color: #ffffff;">0</span></td>
+</tr>
+<tr>
+<td><span style="color: #ffffff;">2-4</span></td>
+<td><span style="color: #ffffff;">1</span></td>
+<td><span style="color: #ffffff;">1</span></td>
+</tr>
+<tr>
+<td><span style="color: #ffffff;">4-5</span></td>
+<td><span style="color: #ffffff;">4</span></td>
+<td><span style="color: #ffffff;">8</span></td>
+</tr>
+<tr>
+<td><span style="color: #ffffff;">5-6</span></td>
+<td><span style="color: #ffffff;">8</span></td>
+<td><span style="color: #ffffff;">16</span></td>
+</tr>
+<tr>
+<td><span style="color: #ffffff;">6-8</span></td>
+<td><span style="color: #ffffff;">2</span></td>
+<td><span style="color: #ffffff;">2</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #ffffff;">(Ignore relative frequency for now). It is difficult to draw a bar chart for this information, because the class divisions for the height are not the same. The height is grouped 0-2, 2-4 etc, but not all of the groups are the same size. For example the 4-5 group is smaller than the 0-2 group.</span></p>
+<p><span style="color: #ffffff;">When drawing a histogram, the y-axis is labelled 'relative frequency' or 'frequency density'. You must work out the relative frequency before you can draw a histogram. To do this, first you must choose a standard width of the groups. Some of the heights are grouped into 2s (0-2, 2-4, 6-8) and some into 1s (4-5, 5-6). Most are 2s, so we shall call the standard width 2. To make the areas match, we must double the values for frequency which have a class division of 1 (since 1 is half of 2). Therefore the figures in the 4-5 and the 5-6 columns must be doubled. If any of the class divisions were 4 (for example if there was a 8-12 group), these figures would be halved. This is because the area of this 'bar' will be twice the standard width of 2 unless we half the frequency.</span></p>
+<p><span style="color: #ffffff;">If you are having problems working out the height of each of the bars, you can use the formula</span></p>
+<p><span style="color: #ffffff;">Area of bar = frequency x standard width</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><span style="color: #ffffff;">(Ignore relative frequency for now). It is difficult to draw a bar chart for this information, because the class divisions for the height are not the same. The height is grouped 0-2, 2-4 etc, but not all of the groups are the same size. For example the 4-5 group is smaller than the 0-2 group.</span></p>
+<p><span style="color: #ffffff;">When drawing a histogram, the y-axis is labelled 'relative frequency' or 'frequency density'. You must work out the relative frequency before you can draw a histogram. To do this, first you must choose a standard width of the groups. Some of the heights are grouped into 2s (0-2, 2-4, 6-8) and some into 1s (4-5, 5-6). Most are 2s, so we shall call the standard width 2. To make the areas match, we must double the values for frequency which have a class division of 1 (since 1 is half of 2). Therefore the figures in the 4-5 and the 5-6 columns must be doubled. If any of the class divisions were 4 (for example if there was a 8-12 group), these figures would be halved. This is because the area of this 'bar' will be twice the standard width of 2 unless we half the frequency.</span></p>
+<p><span style="color: #ffffff;">If you are having problems working out the height of each of the bars, you can use the formula</span></p>
+<p><span style="color: #ffffff;">Area of bar = frequency x standard width</span></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+		</center>
+    </div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

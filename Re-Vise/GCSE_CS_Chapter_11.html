@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+		h1{
+			color: white;
+		}
+		h2{
+			color: white;
+		}
+		p{
+			color: white;
+		}
+		table{
+			color: white;
+		}
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your GCSE CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">GCSE CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping GCSE students with learning new skills and applying them in examination</p>
+		<h1>Producing Robust Programs</h1>
+		<p>	When designing programs we need to ensure that they are robust.</p>
+<p>	Failure to do this may result in two critical outcomes:</p>
+<p>	-	The program won’t function correctly / will not do the job it’s supposed to do.</p>
+<p>	-	The program may be unsecure and data that it holds may become compromised.</p>
+<p>	Both outcomes are unacceptable. Luckily there are a ways that we can minimise these issues, through defensive design strategies, which will ensure the robustness of our software solutions:</p>
+<p>	-	Input Sanitisation</p>
+<p>	-	Anticipating Misuse and Input Validation</p>
+<p>	-	Authentication</p>
+<p>	-	Maintainability of Code</p>
+<p>	-	Testing</p>
+<p>	Input Sanitisation</p>
+<p>	-	This is where data entered is cleaned of any unwanted characters that the user may enter. This issue is most commonly faced with SQL injections which are added SQL to the end of a password to alter the SQL statement</p>
+<p>	Input Validation</p>
+<p>	-	Input validation is when a system will check that the input meets certain criteria, so to ensure that the data is in an acceptable form.</p>
+<p>	-	For example, if a user is to input their email address to enable them to sign up to a user account, input validation can check to see if the entered email address in the expected form (contains an @ symbol and ends with a domain type (.co.uk)).</p>
+<p>	To know wherever or not to sanitise or validate a program, a software developer will often use either a whitelist or a blacklist to help plan whether to accept, reject or alter an input accordingly.</p>
+<p>	A whitelist is a list of data that the program should accept and any other data should be rejected whilst a blacklist is a list of data that the program should reject. A whitelist is often more effective and secure but more restrictive and longer in its production time whilst a blacklist is the opposite in its advantages and disadvantages </p>
+<p>	Authentication is another way to produce a more robust program is works by only allowing certain users to log into a program such limiting access to those who aren’t supposed to use it.</p>
+<p>	Maintainability is a simple yet effective way to improve a program’s strength as it allows it to be far easier in how it is perceived and in finding any bugs or mistakes that are there.</p>
+<p>	Comments are lines that explain what is meant in each part of the code and the way that it functions so that any other programmer who sees the code can grasp it quickly if they wanted to work on it.</p>
+<p>	Testing is very important in producing a robust program as is can show errors that need to be fixed or it will result in a poor experience for the user. Errors in the syntax, the logic or the overall design will result in a horrible experience for the user if left unkempt. Furthermore, the timing of the testing is a massive deal. If it is iterative, the testing occurs during the development process and tests occur in separate parts of the program with different goals. Whilst, if the testing is final, it occurs all at the end to match with the requirements that the program has to meet.</p>
+<p>	Program Errors come in three separate varieties which are:</p>
+<p>	•	Syntax which is when the program translates from source code to machine code but the source code does not translate correctly according to the rules of the translator. Examples of syntax errors are:</p>
+<p>	o	Incorrect assignment statement such as number1 + number2 = answer</p>
+<p>	o	Missing/extra punctuation or brackets such as print(“HI)</p>
+<p>	o	Type mismatch such as number = int(input(“Enter a number”)) but a string is entered</p>
+<p>	•	Logic which is when the code is in accordance with the rules and is translated but provides an unexpected output such as an incorrect maths statement, wrongly ordered instructions or wrong conditions for an IF statement and an iteration</p>
+<p>	•	Run-time errors are essentially errors with the arithmetic of a piece of code such as dividing a number by zero or finding the square root of a negative number or an overflow error where the variable holds a value that is too large</p>
+<p>	•	Testing strategies are different ways to test a program and are either:</p>
+<p>	o	Black Box Testing which is when only the inputs and outputs are tested and not the algorithms and how they work. However it is nearly impossible to test for every possible input to see if it produces the correct output. In Black Box testing, we use ‘Valid’, ‘Invalid’ and ‘Borderline’ data</p>
+<p>	o	White Box Testing which only deals with the algorithms so that they function properly and that all possible paths of the algorithms are tested correctly and each path is noted and compared with other paths</p>
+<p>	•	Test Plans are used to ensure that a system is fully tested and to document the outcomes. Test Plans are made up of the test data, the reason for the test, the expected outcome and the actual result</p>
+<p>	•	A dry run is when the code is executed in an individual’s head and recording the effects on the variables in what is called a ‘trace table’</p>
+<p>	•	Alpha Testing and Beta Testing both occur after Black and White Box testing and are:</p>
+<p>	o	Alpha Testing is when the programmers who created the program pretend to be the end users and use the program ‘in-house’ to see if it has met with its objectives and to deal with the major flaws and errors of the code</p>
+<p>	o	Beta Testing occurs after Alpha is completed and is the final test before the program is widely distributed to the world and involves large numbers of ‘real’ users who are not ‘in-house’ programmers to test for final bugs and any short comings</p>
+
+		</div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

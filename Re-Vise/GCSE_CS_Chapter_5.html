@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+		h1{
+			color: white;
+		}
+		h2{
+			color: white;
+		}
+		p{
+			color: white;
+		}
+		table{
+			color: white;
+		}
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your GCSE CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">GCSE CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping GCSE students with learning new skills and applying them in examination</p>
+		<h1>Network Topologies, protocols and layers</h1>
+  <h2>Network Topologies</h2>
+  <p>There are several different ways that LANs can be set up and these ‘setups’ are known as topologies. The topology that an organisation will choose will be dependent on the money available, the performance required and the expertise at hand.</p>
+  <p>Bus Topology</p>
+  <p>In a bus topology, there is only one cable which all nodes connect to.</p>
+  <table>
+  <tr>
+	<th>Advantages</th>
+	<th>Disadvantages</th>
+  </tr>
+  <tr>
+	<td>•	Cheap to set up due to little cabling requirements</td>
+	<td>•	Because data travels both ways along one cable, data collides which slows the network.</td>
+  </tr>
+  <tr>
+	<td></td>
+	<td>•	If the cable has a fault the whole network may suffer.</td>
+  </tr>
+  <tr>
+	<td></td>
+	<td>•	Only really useful over small areas.</td>
+  </tr>
+  </table>
+  <p>Ring Topology</p>
+  <p>In a ring topology, there is effectively a single cable connecting all nodes, however data travels in one direction, which will mean few data collisions</p>
+  <table>
+  <tr>
+	<th>Advantages</th>
+	<th>Disadvantages</th>
+  </tr>
+  <tr>
+	<td>•	Cheap to set up due to little cabling requirements.</td>
+	<td>•	If the cable has a fault the whole network may suffer.</td>
+  </tr>
+  <tr>
+	<td>•	Data travels in only one direction which means fewer data collisions.</td>
+	<td></td>
+  </tr>
+  </table>
+  <p>Mesh Topology</p>
+  <p>A mesh topology is a fully connected network as each device is connected to all others, which is good because if a cable has a fault, there will be another route available for data to travel.</p>
+  <table>
+  <tr>
+	<th>Advantages</th>
+	<th>Disadvantages</th>
+  </tr>
+  <tr>
+	<td>•	If a cable breaks or if there is heavy traffic in one area, there are other routes for the data to take</td>
+	<td>•	Can be a very expensive set up due to the cabling required.</td>
+  </tr>
+  </table>
+  <p>Star Topology</p>
+  <p>In a star topology, a hub or a switch will be used to connect all devices, which means that the network performance will be faster due to the increase in cabling – there will be more available routes resulting in fewer data collisions.</p>
+  <table>
+  <tr>
+	<th>Advantages</th>
+	<th>Disadvantages</th>
+   </tr>
+   <tr>
+	<td>•	All cables connect to a hub or a switch and therefore data doesn’t share one cable which results in fewer data collisions and therefore a faster network.</td>
+	<td>•	It is the most expensive topology as it requires a lot of cable and addition network devices (hub/switch).</td>
+   </tr>
+  </table>
+  <h2>Data Transfer Media </h2>
+  <p>All networks must enable computers to communicate with one another. This can be done using two main data transfer mediums which is either through cables or through Wi-Fi</p>
+  <h2>Cables (wired) </h2>
+  <p>There are two main types of cable which can transport data between computers:</p>
+  <h2>Ethernet Cables </h2>
+  <p>These are made up of copper wires with the data being transported via electrical signals. Because they carry electrical signals, they can suffer from interference.
+Don’t get the term ‘Ethernet Cable’ and the word ‘Ethernet’ muddled up. ‘Ethernet’ is a protocol (a rule) governing how data should be transported, whereas ‘Ethernet Cables’ are the media through which the data is transported.
+</p>
+  <h2>Fibre Optic Cables </h2>
+  <p>These are made up of glass fibres with the data being transported via light signals. Fibre optic cables are more effective…nothing travels faster than the speed of light! They also do not suffer from interference. They are however more expensive than Ethernet cables.</p>
+  <h2>Wi-Fi (wireless)</h2>
+  <p>Wi-Fi allows network access to portable devices by using radio waves to send data (not wires!). Wi-Fi is a ‘standard’. This means that all Wi-Fi devices are using the same standard technology. In particular they send and receive data using standard radio frequency bands:
+2.4 GHz Band (frequencies between 2.4GHz & 2.5GHz)
+5 GHz Band (frequencies between 5.725GHz & 5.875GHz)
+</p>
+<p>Furthermore, each band is split into channels that cover smaller frequency ranges, within the band.</p>
+<p>This is so that if two devices are sending signals using the same band (e.g. 2.4GHz), they can each use different channels and therefore slightly different frequencies (e.g. 2.41GHz and 2.45GHz), so that they do not suffer from interference with one another.</p>
+  <h2>Data Packets </h2>
+  <p>We have already learnt how the Internet is a massive network of networks, but how does data travel around the ginormous network? Data packets are the answer!
+When files are sent over the internet they are split into millions of data packets. Packets get sent by different routes according to availability. When you send a file online, the parts of the file might travel one way around the world and the other parts may go in the opposite direction! Packets are reassembled at receiving end.
+</p>
+  <h2>IP addressing, MAC addressing and Protocols </h2>
+  <p>So, we have now seen how data is sent around networks in data packets, but because the internet has billions of computers and devices attached to it, these devices will only be able to communicate with one another if they ‘speak the same language’ (i.e. if these data packets are produced and sent in the same standard way). Because of this, the internet is full of protocols, which is really just a fancy name for rules. By manufacturing nodes and network devices to adhere to these rules, all devices on the internet can work effectively. We shall now take a look at some of the major protocols which enables the internet to work. They sound scary but they really are not!</p>
+  <p>MAC Addresses</p>
+  <p>Just like humans have postal addresses, every network card in the world has a MAC address (MAC - Media Access Control). A MAC address is hard coded into each and every network device and cannot change. It is a 12-digit hexadecimal number (e.g. 
+56:b3:8f:90:64:ef). It is there so that data being sent over a network can be sent to the correct network card. It is known as a PHYSICAL ADDRESS
+</p>
+  <p>IP Addresses</p>
+  <p>Just like each network card will have a MAC address, every computer on a network will have an IP address. They are usually a 32bit number written as 4 decimal numbers (e.g.:
+129.168.1.101). they are required for the same reason…so that data being sent over a network can be sent to the correct node. The main difference is that an IP address is not hard coded into the computer. It can change and is therefore said to be dynamic. The reason for this is so that on a network, similar types of hardware can be grouped by being assigned similar IP addresses. For example, computers could all be given an IP address starting 190, printers could be given an IP address staring 200 and so on. This means that different types of device can be more easily managed on a network.
+</p>
+  <p>The TCP/IP Protocol</p>
+  <p>This is probably the most important protocol as it determines how all data is sent over the internet. Actually it is made up of two protocols:
+TCP – Transmission Control Protocol
+We saw earlier how data is split into packets before being sent across the internet. The TCP defines the rules for this.
+•	It ensures all data is split up into data packets in the same way.
+•	It ensures that these data packets are put back together when received by the destination device.
+•	It also ensures that any data received is the same as that sent.
+IP – Internet Protocol
+This rule is in place to ensure that data packets are directed towards their destination in the most appropriate way (which may not be the shortest way).
+This is called ‘Packet Switching’.
+</p>
+  <p>World Wide Web (website) Protocols</p>
+  <p>HTTP – Hyper Text Transfer Protocol
+This is the protocol which governs the way in which websites and web servers are accessed by web browsers. By conforming to the same standards it means that all browsers can access all websites on the WWW.
+HTTPS – Hyper Text Transfer Protocol (SECURE)
+This protocol is almost identical to HTTP. The only difference is that it ensures all data being sent is encrypted and so makes web data communication far more secure.
+</p>
+	<p>File Transfer (Upload, Download, Read and Write) Protocols</p>
+	<p>FTP – File Transfer Protocol
+If you have your documents / files stored on a file server, the way you access them will be governed by the File Transfer Protocol. This standard (FTP) ensure that all clients (computers) on a network can access files from a server in the same way.
+</p>
+	<p>Email Protocols</p>
+	<p>POP – Post Office Protocol
+This is the protocol which governs how emails are accessed from a server. Email clients will use this protocol to access emails from a server in the same way.
+IMAP – Internet Message Access Protocol
+This is similar to POP but with one important difference. With IMAP, the email will remain on the server once it has been downloaded by a mail client. This allows other devices to also access the emails which is important for users with multiple devices – they can synchronise their emails across all devices.
+SMTP – Simple Mail Transfer Protocol
+This protocol governs how data is sent between mail servers. By conforming to the same standards, emails can be sent to and from all mail servers across the internet.
+</p>
+  
+	</div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your A-Level CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">A-Level CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping A-Level students with learning new skills and applying them in examination</p>
+		<h1><span style="font-weight: 400; color: #ffffff;">2.3 Algorithms</span></h1>
+<p><span style="color: #ffffff;"><strong>2.3.1 Algorithms</strong></span></p>
+<p><span style="font-weight: 400; color: #ffffff;">(a) Analysis and design of algorithms for a given situation</span></p>
+<p><span style="color: #ffffff;"><strong>Algorithms</strong><span style="font-weight: 400;">: Set of instructions that complete a task when execute</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Algorithms run by computers are called </span><strong>'programs'</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Scale algorithms by:</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>time</strong><span style="font-weight: 400;"> it takes for the algorithm to complete</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>memory/resources </strong><span style="font-weight: 400;">the algorithm needs. '</span><strong>space</strong><span style="font-weight: 400;">'.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Complexity (Big O notation)</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">(b) The suitability of different algorithms for a given task and data set, in terms of execution time and space</span> <span style="font-weight: 400;">&nbsp;</span></span></p>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">There are </span><strong>different suitable algorithm</strong><span style="font-weight: 400;">s for </span><strong>each task</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Space efficiency:</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The measure of how much memory (</span><strong>space</strong><span style="font-weight: 400;">) the algorithm takes as its input (</span><strong>N</strong><span style="font-weight: 400;">) is scaled up</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Space </span><strong>increases linearly</strong><span style="font-weight: 400;"> with N</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Code space is </span><strong>constant/data space</strong><span style="font-weight: 400;"> is also</span><strong> constant</strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Time efficiency</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Measure of how much </span><strong>time </strong><span style="font-weight: 400;">it takes to </span><strong>complete an algorithm</strong><span style="font-weight: 400;"> as its input (</span><strong>N</strong><span style="font-weight: 400;">) increases</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Time increases </span><strong>linearly </strong><span style="font-weight: 400;">with N</span></span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Sum of numbers = n(n+1)/2</strong></strong></span></li>
+</ul>
+<ul>
+<li><strong>Big O notation</strong></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Refer to ((c) Measures and methods to determine the efficiency of algorithms (Big O) notation (constant, linear, polynomial, exponential and logarithmic complexity))</span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(c) Measures and methods to determine the efficiency of algorithms (Big O) notation (constant, linear, polynomial, exponential and logarithmic complexity)</span></p>
+<p><span style="color: #ffffff;"><strong>(Big O) notation</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Shows </span><strong>highest order component </strong><span style="font-weight: 400;">with any constants removed to evaluate the </span><strong>complexity </strong><span style="font-weight: 400;">and </span><strong>worst-case scenario</strong><span style="font-weight: 400;"> of an </span><strong>algorithm</strong><span style="font-weight: 400;">.&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Shows how </span><strong>time increases</strong><span style="font-weight: 400;"> as </span><strong>data size increases</strong><span style="font-weight: 400;"> to show </span><strong>limiting behaviour</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Big O Notation</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>O(1) </strong><span style="font-weight: 400;">&ndash; </span><strong>Constant complexity</strong><span style="font-weight: 400;"> e.g. printing first letter of string.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>O(n)</strong><span style="font-weight: 400;"> &ndash; </span><strong>Linear complexity</strong><span style="font-weight: 400;"> e.g. finding largest number in list.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>O(kn)</strong><span style="font-weight: 400;"> &ndash; </span><strong>Polynomial complexity</strong><span style="font-weight: 400;"> e.g. bubble sort.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>O(</strong><strong>k^n</strong><strong>)</strong><span style="font-weight: 400;"> &ndash; </span><strong>Exponential complexity</strong><span style="font-weight: 400;"> e.g. travelling salesman problem.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>O(logn)</strong><span style="font-weight: 400;"> &ndash; </span><strong>Logarithmic complexity</strong><span style="font-weight: 400;"> e.g. binary search</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(d) Comparison of the complexity of algorithms</span></p>
+<p><span style="color: #ffffff;"><strong>Complexity</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Complexity is a measure of how much time</span><strong>, memory space</strong><span style="font-weight: 400;"> or </span><strong>resources </strong><span style="font-weight: 400;">needed for an algorithm </span><strong>increases </strong><span style="font-weight: 400;">as the </span><strong>data size</strong><span style="font-weight: 400;"> it works on </span><strong>increases</strong><span style="font-weight: 400;">.&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Represents the </span><strong>average complexity</strong><span style="font-weight: 400;"> in </span><strong>Big-O notation</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Big-O notation just shows the </span><strong>highest order component</strong><span style="font-weight: 400;"> with any </span><strong>constants removed</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Shows the </span><strong>limiting behaviour</strong><span style="font-weight: 400;"> of an algorithm to classify its complexity.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Evaluates the </span><strong>worst case scenario</strong><span style="font-weight: 400;"> for the </span><strong>algorithm</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Types of Complexity&nbsp;</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Complexity</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Description</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Graph</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Constant complexity O(1)</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Time taken</strong><span style="font-weight: 400;"> for an algorithm stays the </span><strong>same </strong><span style="font-weight: 400;">regardless of the </span><strong>size </strong><span style="font-weight: 400;">of the data set</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Example:</strong><span style="font-weight: 400;"> Printing the first letter of a string. No matter how big the string gets it won&rsquo;t take longer to display the first letter.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Linear complexity O(n)</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">This is where the </span><strong>time taken</strong><span style="font-weight: 400;"> for an algorithm </span><strong>increases proportionally </strong><span style="font-weight: 400;">or at the </span><strong>same rate</strong><span style="font-weight: 400;"> with the </span><strong>size of the data set</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Example: Finding the largest number in a list. If the list size doubles, the time taken doubles.</span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Polynomial complexity O(kn) (where k&gt;=0)</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">This is where the time taken for an </span><strong>algorithm increases proportionally to n</strong><span style="font-weight: 400;"> to the </span><strong>power</strong><span style="font-weight: 400;"> of a </span><strong>constant</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Bubble sort is an example of such an algorithm.</span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Exponential complexity O(k^n) (where k&gt;1)</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">This is where the time taken for an</span><strong> algorithm increases exponentially</strong><span style="font-weight: 400;"> as the data set </span><strong>increases</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Travelling Salesman Problem</strong><span style="font-weight: 400;"> = example algorithm.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The inverse of </span><strong>logarithmic growth</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Does not scale up well when </span><strong>increased </strong><span style="font-weight: 400;">in </span><strong>number </strong><span style="font-weight: 400;">of </span><strong>data items</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Logarithmic complexity O(log n)</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">This is where the time taken for an algorithm </span><strong>increases logarithmically</strong><span style="font-weight: 400;"> as the </span><strong>data set increases</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">As </span><strong>n</strong> <strong>increases</strong><span style="font-weight: 400;">, the </span><strong>time taken increases</strong><span style="font-weight: 400;"> at a </span><strong>slower rate</strong><span style="font-weight: 400;">, e.g. Binary search.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>inverse of exponential growth</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Scales up well</strong><span style="font-weight: 400;"> as does not </span><strong>increase significantly</strong><span style="font-weight: 400;"> with the </span><strong>number of data items</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;"><br />(e) Algorithms for the main data structures (stacks, queues, trees, linked lists, depth-first (post-order) and breadth-first traversal of trees)</span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Data Structures</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Description</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Algorithm</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Stack PUSH</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">When a data item is </span><strong>added </strong><span style="font-weight: 400;">to the </span><strong>top </strong><span style="font-weight: 400;">of a stack</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Stack POP</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">When a data item is </span><strong>removed </strong><span style="font-weight: 400;">from the </span><strong>top </strong><span style="font-weight: 400;">of a stack</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Queue PUSH</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">When a data item is </span><strong>added </strong><span style="font-weight: 400;">to the </span><strong>back </strong><span style="font-weight: 400;">of a queue</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Queue POP</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">When a data item is </span><strong>removed </strong><span style="font-weight: 400;">from the </span><strong>front </strong><span style="font-weight: 400;">of a queue</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Linked List (Output in Order)</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">When the contents of a linked list are </span><strong>displayed in order</strong></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Linked List (Add item to list)</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">When a data item is added </span><strong>anywhere </strong><span style="font-weight: 400;">on a </span><strong>linked list</strong></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<h1>&nbsp;</h1>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Tree Traversal</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Description</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Algorithm</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Depth first (post-order)</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Visit </span><strong>all nodes</strong><span style="font-weight: 400;"> to the </span><strong>left of the root node</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Visit </span><strong>right</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Visit </span><strong>root node</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Repeat </span><strong>three points for each node visited</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Depth first isn&rsquo;t </span><strong>guaranteed </strong><span style="font-weight: 400;">to find the </span><strong>quickest solution</strong><span style="font-weight: 400;"> and possibly </span><strong>may never find the solution</strong><span style="font-weight: 400;"> if no precautions to revisit </span><strong>previously visited states</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Breadth first</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Visit</span><strong> root node</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Visit all </span><strong>direct subnodes </strong><span style="font-weight: 400;">(</span><strong>children</strong><span style="font-weight: 400;">)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Visit all </span><strong>subnodes of first subnode</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Repeat</span><strong> three points</strong><span style="font-weight: 400;"> for each </span><strong>subnode visited</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Breadth first requires </span><strong>more memor</strong><span style="font-weight: 400;">y than Depth first search.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">It is </span><strong>slower </strong><span style="font-weight: 400;">if you are looking at </span><strong>deep parts</strong><span style="font-weight: 400;"> of the tree.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;"><br />(f) Standard algorithms (bubble sort, insertion sort, merge sort, quick sort, Dijkstra's shortest path algorithm,A* algorithm, binary search and linear search)</span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Sort</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Description</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Algorithm</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Bubble Sort</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is </span><strong>intuitive </strong><span style="font-weight: 400;">(easy to understand and program) but </span><strong>inefficient</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Uses a </span><strong>temp element</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Moves through the data in the </span><strong>list repeatedly</strong><span style="font-weight: 400;"> in a </span><strong>linear way</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Start at the </span><strong>beginning </strong><span style="font-weight: 400;">and </span><strong>compare </strong><span style="font-weight: 400;">the </span><strong>first item </strong><span style="font-weight: 400;">with the </span><strong>second</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">If they are out of order, </span><strong>swap them</strong><span style="font-weight: 400;"> and set a </span><strong>variable swapMade true</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Do the same with the </span><strong>second and third item</strong><span style="font-weight: 400;">, </span><strong>third and fourth</strong><span style="font-weight: 400;">, and so on until the </span><strong>end of the list</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">When, at the end of the list,</span><strong> if swapMade is true</strong><span style="font-weight: 400;">, change it to </span><strong>false </strong><span style="font-weight: 400;">and </span><strong>start again</strong><span style="font-weight: 400;">; otherwise, If it is </span><strong>false</strong><span style="font-weight: 400;">, the </span><strong>list is</strong> <strong>sorted</strong><span style="font-weight: 400;"> and the </span><strong>algorithm stops</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Insertion Sort</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Works by</span><strong> dividing</strong><span style="font-weight: 400;"> a list into </span><strong>two parts</strong><span style="font-weight: 400;">: </span><strong>sorted and unsorted</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Elements are inserted </span><strong>one by one</strong><span style="font-weight: 400;"> into their </span><strong>correct position</strong><span style="font-weight: 400;"> in the </span><strong>sorted section</strong><span style="font-weight: 400;"> by </span><strong>shuffling them left</strong><span style="font-weight: 400;"> until they are </span><strong>larger </strong><span style="font-weight: 400;">than the item to the </span><strong>left </strong><span style="font-weight: 400;">of them until all items in the list are </span><strong>checked</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Simplest sort algorithm</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Inefficient </strong><span style="font-weight: 400;">&amp; takes longer for </span><strong>large sets of data</strong></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Merge Sort</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Works by splitting</span><strong> n data</strong> <strong>items </strong><span style="font-weight: 400;">into</span><strong> n sublists</strong> <strong>one item big</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">These lists are then </span><strong>merged</strong><span style="font-weight: 400;"> into </span><strong>sorted lists two items big</strong><span style="font-weight: 400;">, which are </span><strong>merged into lists four items big</strong><span style="font-weight: 400;">, and so on until there is </span><strong>one sorted list</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is a </span><strong>recursive algorithm </strong><span style="font-weight: 400;">= require</span><strong> more memory space</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is </span><strong>fast </strong><span style="font-weight: 400;">&amp; </span><strong>more efficient</strong><span style="font-weight: 400;"> with </span><strong>larger volumes</strong><span style="font-weight: 400;"> of data to sort.</span></span></li>
+</ul>
+</td>
+<td><br /><br /></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Quick Sort</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Uses </span><strong>divide and conquer</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Picks an item as a </span><strong>&lsquo;pivot&rsquo;</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">It then creates two </span><strong>sub-lists</strong><span style="font-weight: 400;">: those </span><strong>bigger </strong><span style="font-weight: 400;">than the pivot and those </span><strong>smaller.</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The same process is then applied </span><strong>recursively/iteratively </strong><span style="font-weight: 400;">to the </span><strong>sub-lists</strong><span style="font-weight: 400;"> until all items are </span><strong>pivots</strong><span style="font-weight: 400;">, which will be in the </span><strong>correct order</strong><span style="font-weight: 400;">.&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Alternative </span><strong>method uses two pointers</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Compares </strong><span style="font-weight: 400;">the numbers at the </span><strong>pointers </strong><span style="font-weight: 400;">and swaps them if they are in the </span><strong>wrong order</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Moves </span><strong>one pointer at a time</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Very quick</strong><span style="font-weight: 400;"> for </span><strong>large sets of data</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Initial arrangement of </span><strong>data affects the time taken</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Harder to code</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Path Algorithms</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Description</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Algorithm</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Dijkstra&rsquo;s shortest path algorithm</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Finds the </span><strong>shortest path </strong><span style="font-weight: 400;">between </span><strong>two nodes</strong><span style="font-weight: 400;"> on a graph.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">It works by keeping </span><strong>track of the shortest distance </strong><span style="font-weight: 400;">to each </span><strong>node </strong><span style="font-weight: 400;">from the </span><strong>starting node</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">It </span><strong>continues </strong><span style="font-weight: 400;">this until it has </span><strong>found the destination node</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>A* algorithm</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Improvement </strong><span style="font-weight: 400;">on </span><strong>Dijkstra&rsquo;s algorithm</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Heuristic approach </strong><span style="font-weight: 400;">to estimate the </span><strong>distance</strong><span style="font-weight: 400;"> to the </span><strong>final node</strong><span style="font-weight: 400;">, =</span><strong> shortest path </strong><span style="font-weight: 400;">in </span><strong>less time</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Uses the </span><strong>distance </strong><span style="font-weight: 400;">from the </span><strong>start node</strong> <strong>plus </strong><span style="font-weight: 400;">the </span><strong>heuristic estimate</strong><span style="font-weight: 400;"> to the </span><strong>end node</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Chooses which </span><strong>node </strong><span style="font-weight: 400;">to </span><strong>take next</strong><span style="font-weight: 400;"> using the </span><strong>shortest distance + heuristic</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">All </span><strong>adjoining nodes</strong><span style="font-weight: 400;"> from this</span><strong> new node are taken</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Other </span><strong>nodes </strong><span style="font-weight: 400;">are </span><strong>compared again in future checks</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Assumed that this </span><strong>node </strong><span style="font-weight: 400;">is a </span><strong>shorter distance</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Adjoining nodes</strong><span style="font-weight: 400;"> may </span><strong>not </strong><span style="font-weight: 400;">be</span><strong> shortest path</strong><span style="font-weight: 400;"> so may need to </span><strong>backtrack to previous nodes</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Search Type</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Description</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Algorithm</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Binary Search</strong></span></p>
+<p><span style="color: #ffffff;"><strong>Recursive</strong></span></p>
+</td>
+<td rowspan="2">
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Requires the list to be </span><strong>sorted in order</strong><span style="font-weight: 400;"> to allow the </span><strong>appropriate items to be discarded</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">It involves checking the item in the </span><strong>middle</strong><span style="font-weight: 400;"> of the </span><strong>bounds of the space</strong> <strong>being searched.</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">It the </span><strong>middle item is bigger</strong><span style="font-weight: 400;"> than the item we are looking for, it becomes the </span><strong>upper bound.</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">If it is s</span><strong>maller than the item we are looking for</strong><span style="font-weight: 400;">, it becomes the </span><strong>lower bound.</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Repeatedly discards and</span><strong> halves</strong><span style="font-weight: 400;"> the list at </span><strong>each step</strong><span style="font-weight: 400;"> until the </span><strong>item </strong><span style="font-weight: 400;">is found.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Is usually faster in a </span><strong>large set of data</strong><span style="font-weight: 400;"> than </span><strong>linear search</strong><span style="font-weight: 400;"> because </span><strong>fewer items</strong><span style="font-weight: 400;"> are checked so is more </span><strong>efficient for large files</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Doesn't benefit from </span><strong>increase in speed</strong><span style="font-weight: 400;"> with </span><strong>additional processors</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Can perform better on </span><strong>large data sets</strong><span style="font-weight: 400;"> with </span><strong>one processor</strong><span style="font-weight: 400;"> than </span><strong>linear search with many processors</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Binary Search</strong></span></p>
+<p><span style="color: #ffffff;"><strong>Iterative</strong></span></p>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Linear Search</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Start at the </span><strong>first location</strong><span style="font-weight: 400;"> and check each </span><strong>subsequent location</strong><span style="font-weight: 400;"> until the </span><strong>desired item is found</strong><span style="font-weight: 400;"> or the </span><strong>end of the list is reached</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Does not need an </span><strong>ordered list</strong><span style="font-weight: 400;"> and </span><strong>searches through all items</strong><span style="font-weight: 400;"> from the </span><strong>beginning one by one</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Generally performs much better than binary search if the </span><strong>list is small </strong><span style="font-weight: 400;">or if the item being searched for is </span><strong>very close to the start of the list</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Can have </span><strong>multiple processors</strong><span style="font-weight: 400;"> searching </span><strong>different areas</strong><span style="font-weight: 400;"> at the same time.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Linear search </span><strong>scales very</strong><span style="font-weight: 400;"> with </span><strong>additional processors.</strong></span></li>
+</ul>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="color: #ffffff;"><strong><br />Summary</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td>&nbsp;</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Worst Case</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Best Case</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Bubble Sort</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n&sup2;</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Insertion Sort</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n&sup2;</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Merge Sort</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n log n</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n log n</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Quick Sort</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n&sup2;</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n log n</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Binary Search</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong> log_2 (n)</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Linear Search</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>n</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<h1><br /><br /></h1>
+		</center>
+    </div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

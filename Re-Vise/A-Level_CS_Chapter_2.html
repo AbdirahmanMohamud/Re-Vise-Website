@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your A-Level CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">A-Level CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping A-Level students with learning new skills and applying them in examination</p>
+		<h2 dir="ltr"><span style="color: #ffffff;">1.2 Software and software development</span></h2>
+<p dir="ltr"><span style="color: #ffffff;">1.2.1 Systems Software</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(a) Function and purpose of operating systems</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Operating System: Low-level software which controls a computer&rsquo;s basic functions such as:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Controls communication to/from devices using&nbsp;protocols</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Manage Software: Loading/Uploading software to memory</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Provide&nbsp;Security:&nbsp;Username/Password&nbsp;control</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Handles&nbsp;code translations&nbsp;of:&nbsp;compilers/interpreters/assemblers&nbsp;to translate&nbsp;HLL/LLL&nbsp;into machine code.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Provide a user interface&nbsp;(UI) / HCI :&nbsp;So user can interact with the computer e.g Command Line Interface (CMD/CLI)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Utility software&nbsp;used to carry out&nbsp;maintenance tasks&nbsp;to maintain&nbsp;hardware</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Uses&nbsp;job scheduling&nbsp;to provide&nbsp;fair access&nbsp;to&nbsp;processor&nbsp;according to&nbsp;set rules.</span></p>
+</li>
+</ul>
+<p dir="ltr"><span style="color: #ffffff;">(b) Memory management (paging, segmentation, virtual memory)</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Memory is limited so it needs to be&nbsp;managed.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">This is achieved by providing each&nbsp;process&nbsp;with a&nbsp;segment&nbsp;of the total memory</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">This is so there is no&nbsp;corruption of data&nbsp;during memory transfer&nbsp;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Ensures programs can&rsquo;t access each&nbsp;other&rsquo;s memory&nbsp;unless&nbsp;legitimately required&nbsp;to.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Provides&nbsp;security to OS</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Allows programs&nbsp;larger than main memory&nbsp;to run</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Allows separate processes&nbsp;to run while&nbsp;managing memory</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Paging</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Segmentation</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Virtual Memory</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Splits memory into&nbsp;fixed-size chunks&nbsp;made to fit the&nbsp;memory</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Splits memory into&nbsp;variable sized logical divisions&nbsp;which can hold&nbsp;whole programs</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">When&nbsp;memory inefficient&nbsp;= allocated&nbsp;secondary storage&nbsp;memory used to allow&nbsp;programs to run</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Are assigned to&nbsp;memory&nbsp;when needed to allow programs to run despite&nbsp;insufficient memory.</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Uses&nbsp;backing store&nbsp;as&nbsp;additional memory&nbsp;for&nbsp;temporary storage</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Are stored on a&nbsp;backing store disk&nbsp;to&nbsp;swap parts&nbsp;of programs used for&nbsp;virtual memory.</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Swap&nbsp;pages to/from RAM&nbsp;(paging)</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="2">
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">&nbsp;Allow programs to be stored in memory&nbsp;non-contiguously.</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Hold&nbsp;part of program&nbsp;not&nbsp;currently in use</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">May cause&nbsp;disk threshing&nbsp;when more time spent&nbsp;swapping pages&nbsp;from memory to disk than&nbsp;processing&nbsp;so computer may &lsquo;hang&rsquo;.</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(c) Interrupts (function of ISRs)</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Interrupt: A signal from a device alerting the CPU for its immediate attention</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Obtain processor time via&nbsp;generating a signal/message&nbsp;to&nbsp;processor&nbsp;stating they need to be&nbsp;serviced immediately</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Breaks&nbsp;current execution&nbsp;which is occuring in the&nbsp;processor</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Interrupts have&nbsp;different priorities&nbsp;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Start when&nbsp;current FDE cycle&nbsp;is&nbsp;complete&nbsp;to ensure&nbsp;max efficiency of processor</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Can only interrupt a&nbsp;low-priority task&nbsp;to avoid&nbsp;delays/loss&nbsp;of data</span></p>
+</li>
+</ul>
+<p dir="ltr"><span style="color: #ffffff;">Interrupt Service Routine (ISR)</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Check&nbsp;IR&nbsp;to compare interrupt priority compared to task</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">If&nbsp;lower/equal priority&nbsp;= current task continues</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">If&nbsp;higher priority&nbsp;= CPU completes&nbsp;FDE cycle</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Contents of registers stored in&nbsp;LIFO stack</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Location of&nbsp;ISR&nbsp;is loaded by loading the&nbsp;relevant value&nbsp;into the PC</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">When&nbsp;ISR&nbsp;is complete</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Flags sent to&nbsp;inactive state</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Further interrupts&nbsp;checked &amp; serviced&nbsp;if necessary</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Contents of stack&nbsp;popped&nbsp;and loaded back onto&nbsp;registers&nbsp;to&nbsp;resume processing</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(d) Scheduling</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Scheduler:&nbsp;Manages the amount of time allocated to different processes in the CPU. It has several purposes:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Maximise&nbsp;# of jobs completed in set time</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Maximise&nbsp;# of users receiving fast response times with minimal delay</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Ensure all jobs are&nbsp;processed fairly&nbsp;so long jobs don&rsquo;t&nbsp;monopolise&nbsp;the processor</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Obtain the&nbsp;most efficient&nbsp;use of processor time and&nbsp;utilise resources&nbsp;dependent upon priorities</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Prevent&nbsp;process starvation&nbsp;from applications in&nbsp;deadlock&nbsp;failing to run</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Scheduling Algorithms</span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Scheduling Algorithm</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Process of &nbsp;Scheduling</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Advantages</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Disadvantages</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Round Robin</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">All jobs given equal amount of processor time. If not completed = sent to back of queue and next job is given time</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Simple to implement as jobs are relatively the same size</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">The importance of the process is not taken into account</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Some jobs require multiple processing tuns making round robin inefficient for longer jobs&nbsp;</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">First come first served</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Jobs completed in order of arrival. Other processes wait in a queue</span></p>
+</li>
+</ul>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">-Simple algorithm which starts a job as soon as it reaches the front of the queue</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Once one job starts it prevents other jobs from being processed</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Long jobs take longer which decreases efficiency of processor</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">+Round Robin disadvantages</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Shortest Job first</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Jobs ordered by how much time each job takes to complete</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Ensures max # of jobs completed</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Minimises average time to process a task&nbsp;</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">When a longer job is processed, it would be interrupted when a shorter job arrives in the queue (Could never complete job is short jobs keep coming)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">+Round Robin disadvantages</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Shortest remaining time</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Orders jobs by how much time they have remaining till completion&nbsp;</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Allows short processes to be handles very quickly</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Ensures max # of jobs completed</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">+Round Robin disadvantages</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Multilevel Feedback queues</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">This uses a number of queues. Each of these queues has a different priority.&nbsp;</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Enures higher priority processes run on time</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Complex to implement</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Not efficient if jobs have similar priorities</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(e) Distributed, embedded, multi-tasking, multi-user, real time OS</span></p>
+<p dir="ltr"><span style="color: #ffffff;">There are different types of operating systems:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Multi-tasking:&nbsp;Allows more than one program to run simultaneously (Windows/Linux)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Multi-user:&nbsp;Allows multiple users to operate one powerful computer using terminals</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Embedded:&nbsp;Handles a specific task on specific hardware (limited resources) (ATM)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Distributed:&nbsp;Allows multiple computers (cluster) to work simultaneously on a problem as a single system. Shares data to reduce bottlenecks</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Real-time:&nbsp;The data is processed immediately and a response is given within a guaranteed time frame (Planes)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Batch: The task of doing the same job over and over again (With different inputs/outputs)</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(f) BIOS</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Basic Input/Output system (BIOS) allows the computer to be &lsquo;booted up&rsquo; when switched on</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">When switched on, PC&nbsp;points processor&nbsp;to&nbsp;BIOS memory to start up</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Check to see if computer is&nbsp;functional/memory installed/processor functional</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Stored in flash memory for&nbsp;modification</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(g) Device drivers</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Normally&nbsp;provided&nbsp;with a&nbsp;peripheral device&nbsp;which contains instructions to enable the&nbsp;peripheral&nbsp;and&nbsp;OS&nbsp;to&nbsp;communicate&nbsp;and&nbsp;configure hardware.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Enables multiple versions of OS to&nbsp;communicate&nbsp;with devices</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(h) Virtual machines</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Theoretical/Generalised&nbsp;computer&nbsp;where a translator is available when programs are run</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Can&nbsp;run OS&nbsp;on a&nbsp;software implementation</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Uses an&nbsp;interpreter&nbsp;to run&nbsp;intermediate code&nbsp;(Slower than compiler)</span></p>
+</li>
+</ul>
+<p dir="ltr"><span style="color: #ffffff;">Intermediate Code</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Partially translated/simplified code (high/machine code)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Can be&nbsp;produced by compiler&nbsp;(if error free)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Protects&nbsp;source code&nbsp;from being copied to keep intellectual property</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Platform&nbsp;independent&nbsp;=&nbsp;improving portability</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">The program&nbsp;runs more slowly&nbsp;than&nbsp;executable code&nbsp;as it needs to be translated each time it is run by&nbsp;additional software.</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">1.2.2 Applications Generation</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(a) Nature of applications<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span></span></p>
+<p dir="ltr"><span style="color: #ffffff;">Software: Set of programs/instructions/code that runs on computers which makes&nbsp;hardware work. (Applications/Utilities software)</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Applications Software:&nbsp;</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Allows user/hardware to carry out tasks</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">E.g Word processor/spreadsheet packages/photo-editing suites/web browsers</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(b) Utilities<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span></span></p>
+<p dir="ltr"><span style="color: #ffffff;">Utilities Software:&nbsp;</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Small piece of systems software with&nbsp;one purpose&nbsp;usually linked with maintenance</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">E.g Anti-Virus/Disk defragmentation/File managers</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(c) Open source vs closed source</span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Open Source</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Closed Source</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Free for others to examine/recompile</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Sold as license to use the software</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Users can create amended versions of program (Access to source code)</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Company/Developer holds copyright so users don&rsquo;t have access to source code</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">No helpline since no commercial organisation<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span></span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Helpline/support available from company + regular updates + large user base</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">E.g Linux/Firefox/Libre Office</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">E.g MAC OS,iWork,Safari</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr"><span style="color: #ffffff;">(d) Translators: Interpreters, compilers, assemblers<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span></span></p>
+<p dir="ltr"><span style="color: #ffffff;">Translators: Converts code from one language to another (Between HLL,LLL,source code,object,intermediate, executable,machine code). There are 3 types of translators:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Interpreters</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Interprets &amp; runs HLL code&nbsp;by converting it to&nbsp;machine code&nbsp;&amp; runs it before reading next line</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Reports&nbsp;one error at a time&nbsp;(stops to show location of error)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Must be&nbsp;present&nbsp;each time the&nbsp;program is run&nbsp;so program runs&nbsp;slower due to translation</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Source code (visible &amp; changeable)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Compilers</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Converts&nbsp;HHL source code&nbsp;to&nbsp;machine code</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Translates whole program as a&nbsp;unit&nbsp;+ creates executable program when completed</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Gives&nbsp;list of errors&nbsp;at end of compilation</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Not readable by humans&nbsp;to protect intellectual property</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Machine dependent &amp; architecture specific&nbsp;(Different code needed)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Compiler is no longer needed when&nbsp;executable code is used</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Produces&nbsp;intermediate code&nbsp;for&nbsp;virtual machines&nbsp;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Assemblers</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Uses&nbsp;low-level source code&nbsp;to translate assembly -&gt; machine code</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Reserves storage&nbsp;for instructions &amp; data</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">One&nbsp;assembly language instruction&nbsp;is converted into one machine code instruction</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Many lines&nbsp;needed for the simplest of tasks</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(e) Stages of compilation<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span></span></p>
+<p dir="ltr"><span style="color: #ffffff;">Compilation has several stages:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Lexical Analysis</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Comments/Whitespace removed from program</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Remaining code turns into a&nbsp;series of tokens&nbsp;(sequences of characters)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Symbol table&nbsp;is created to keep track of variables/subroutines</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Syntax Analysis</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Abstract syntax tree&nbsp;is built from&nbsp;tokens&nbsp;produced in lexical analysis</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">If any tokens&nbsp;break rules of language&nbsp;= Syntax errors generated</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Code generation</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Abstract tree code is converted to&nbsp;object code</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Object code = machine code&nbsp;before &lsquo;linker&rsquo; is run</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Code optimization</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Tweaks code&nbsp;to run as smoothly as possible</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(f) Linkers, loaders, libraries</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Linker:&nbsp;Combines compiled code with library code into a single executable file</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Loader: Part of OS &amp; responsible for loading a program into memory</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Libraries:&nbsp;Pre-written bodies of code that can be used by programmers</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Save time/cover complex areas/different languages can be used together</span></p>
+</li>
+</ul>
+<p dir="ltr"><span style="color: #ffffff;">1.2.3 Software Development</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(a) Waterfall/Agile methodologies/Extreme programming/Spiral/RAD<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span></span></p>
+<p dir="ltr"><span style="color: #ffffff;">Developing Software project:</span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Step</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Process</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Feasibility Study</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">To carry out&nbsp;enquiries&nbsp;on whether the project is&nbsp;possible&nbsp;and&nbsp;solvable. Plans can be&nbsp;revised&nbsp;if there are&nbsp;problems</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Analysts consider parameters such as:</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Technical feasibility&nbsp;&ndash; Is there&nbsp;hardware/software&nbsp;available to&nbsp;implement the solution?</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Economic feasibility/cost benefit analysis&nbsp;&ndash; Is the proposed solution possible to&nbsp;run economically?</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Social feasibility&nbsp;&ndash; Is the effect on the&nbsp;humans involved&nbsp;too&nbsp;extreme&nbsp;to be&nbsp;socially acceptable/environmentally sound?</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Effect on company&rsquo;s practices and workforce&nbsp;&ndash; Is there enough&nbsp;operational skill&nbsp;in the&nbsp;workforce&nbsp;to be&nbsp;capable&nbsp;of&nbsp;running the new system?</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">What is the expected effect on the customer?&nbsp;- If customer&nbsp;not impressed&nbsp;then there&nbsp;may not be a point.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Legal/ethical feasibility&nbsp;&ndash; Can the proposed system solve the&nbsp;problem&nbsp;within the&nbsp;law?</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Time available&nbsp;&ndash; Is the time scale&nbsp;acceptable&nbsp;for the&nbsp;proposed system&nbsp;to be&nbsp;possible?</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Requirements Specification</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">The&nbsp;specification document&nbsp;is developed between&nbsp;client/software developers&nbsp;creates an&nbsp;understanding of a problem&nbsp;and&nbsp;solutions can be derived</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">It states everything the new system is going to do including:</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Input requirements</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Output requirements</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Processing requirements</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Clients agreement to requirements</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Hardware requirements</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Software requirements</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Testing</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">This process makes sure the project runs smoothly. There are 4 types of testing:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Black-Box Testing:&nbsp;Tests the&nbsp;functionality&nbsp;of the program without looking into the&nbsp;internal structures/working.&nbsp;Only input/output</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">White-Box Testing:&nbsp;Tests the&nbsp;structure &amp; workings of the application&nbsp;as opposed to its functionality</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Alpha Testing:&nbsp;Where&nbsp;testers&nbsp;in the&nbsp;organisation test &amp; identify&nbsp;all possible&nbsp;bugs/issues&nbsp;before the product is released</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Beta Testing:&nbsp;Test the program in a &lsquo;real environment&rsquo; with&nbsp;limited end-users&nbsp;so they provide&nbsp;feedback&nbsp;on the&nbsp;functionality&nbsp;of the program.</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Documentation written throughout the process</span></p>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Requirements specification:&nbsp;Details&nbsp;exactly what the system&nbsp;will do</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Design:&nbsp;Includes&nbsp;algorithms/screen layouts/data storage&nbsp;descriptions</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Technical Documentation:&nbsp;Details how the&nbsp;system works&nbsp;for&nbsp;future maintenance&nbsp;E.g&nbsp;Descriptions of code/modules &amp; functionality</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">User Documentation:&nbsp;Tell sythe user exactly how to&nbsp;operate the system&nbsp;E.g&nbsp;Tutorials/Error messages descriptions/troubleshooting guide</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">The waterfall lifecycle</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Series of&nbsp;linear stages&nbsp;presented in&nbsp;order&nbsp;(Can only go to next stage after previous is done)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Possible to back&nbsp;if necessary</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">List of stages:&nbsp;Feasibility Study, Investigation/Requirements Elicitation, Analysis, Design, Implementation/Coding, Testing, Installation, Documentation, Evaluation, Maintenance</span></p>
+</li>
+</ul>
+<p dir="ltr"><span style="color: #ffffff;">Agile development methodologies</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">A group of&nbsp;methodologies&nbsp;to cope with&nbsp;changing requirements&nbsp;&nbsp;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Software produced in a&nbsp;iterative manner&nbsp;(Build on previous versions)</span></p>
+</li>
+</ul>
+<p dir="ltr"><span style="color: #ffffff;">Extreme Programming (XP)</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Example of a&nbsp;Agile Development Methodology&nbsp;(Iterative in nature)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Customer is part of the team&nbsp;to help decide &lsquo;users stories&rsquo; (Requirements/Tested)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Each&nbsp;iteration&nbsp;creates a&nbsp;version of the program&nbsp;with code good enough to be&nbsp;the final product</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Pair programming: One writes/one analyse = switch over</span></p>
+</li>
+</ul>
+<p dir="ltr"><span style="color: #ffffff;">The spiral model</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Designed to manage risk. 4 stages:</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Determine Objectives:&nbsp;Determine objectives according to biggest risks</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Identify/Resolve Risks:&nbsp;Risks identified &amp; alternate solutions considered. Project stopped = Risk too high</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Development &amp; Testing: This is where the program is developed/tested</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Plan next iteration: Determines what happens at next iteration</span></p>
+</li>
+</ul>
+<p dir="ltr"><span style="color: #ffffff;">Rapid Application Development (RAD)</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Involves use of&nbsp;prototypes&nbsp;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Prototype&nbsp;shown to&nbsp;user&nbsp;&amp;&nbsp;feedback given&nbsp;to&nbsp;amend prototype&nbsp;until&nbsp;user is happy</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Constantly&nbsp;developed&nbsp;&amp;&nbsp;reviewed&nbsp;by&nbsp;user&nbsp;until&nbsp;user = satisfied</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(b) Merits and drawback of different methodologies<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span></span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td colspan="2">
+<p dir="ltr"><span style="color: #ffffff;">Waterfall Lifecycle</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Advantages</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Disadvantages</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Suited to&nbsp;large scale static projects</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">If changes occur,&nbsp;hard to do = loss in time/money</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Focuses on&nbsp;early stage development</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Inflexible/limiting to change requirements</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Focuses on&nbsp;end user&nbsp;(Can be involved in different parts of project)<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span></span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Dependent on &lsquo;clear requirements&rsquo; so there is little &lsquo;splash-back&rsquo;</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Progress of&nbsp;development easily measurable</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Produces&nbsp;excessive documentation = time consuming</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Generally&nbsp;more progress forward&nbsp;than backward</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Missing system components&nbsp;tend to be found during&nbsp;design/development</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Orderly sequence guarantees quality&nbsp;written documents&nbsp;</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Performance&nbsp;can&rsquo;t be tested until fully completed</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td colspan="2">
+<p dir="ltr"><span style="color: #ffffff;">Agile development methodologies (Extreme Programming)</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Advantages</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Disadvantages</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">New&nbsp;requirements&nbsp;adapted&nbsp;throughout</span></p>
+</li>
+</ul>
+</td>
+<td rowspan="4">
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Client&nbsp;has to be part of team which might be&nbsp;inconvenient for them</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Lack of documents&nbsp;due to emphasis on coding =&nbsp;not suitable for larger projects</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">End-User&nbsp;is integral throughput</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Pair programming allows code&nbsp;to be&nbsp;efficient/robust/well written<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span></span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Code is&nbsp;created quickly&nbsp;and&nbsp;modules&nbsp;available for user as they are done</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td colspan="2">
+<p dir="ltr"><span style="color: #ffffff;">The spiral model</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Advantages</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Disadvantages</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Large amount of risk analysis&nbsp;significantly&nbsp;reduces risk&nbsp;as&nbsp;risks are fixed in early development stages</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">High skilled team&nbsp;needed for&nbsp;risk analysis</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Software prototype&nbsp;created early and updated in every&nbsp;iteration</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Development costs high&nbsp;due to number of&nbsp;prototypes&nbsp;created &amp;&nbsp;increased customer collaboration</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td colspan="2">
+<p dir="ltr"><span style="color: #ffffff;">Rapid Application Development (RAD)</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Advantages</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Disadvantages</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">End user&nbsp;can see a&nbsp;working prototype&nbsp;early in project</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Emphasis on&nbsp;speed &amp; development&nbsp;affects&nbsp;overall system quality</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">End user&nbsp;more involved &amp; can&nbsp;change requirements&nbsp;so&nbsp;clear direction&nbsp;on where the&nbsp;program is heading</span></p>
+</li>
+</ul>
+</td>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Potential for inconsistent designs&nbsp;&amp;&nbsp;lack of detail in documentation&nbsp;</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Overall&nbsp;development time&nbsp;is&nbsp;quicker reducing costs</span></p>
+</li>
+</ul>
+</td>
+<td rowspan="2">
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Not suitable for&nbsp;safety critical systems</span></p>
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Concentration&nbsp;on&nbsp;essential elements&nbsp;for&nbsp;fast completion</span></p>
+</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p dir="ltr"><span style="color: #ffffff;">1.2.4 Types of Programming Language</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(a) Need for variety of programming paradigms<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;</span></span></p>
+<p dir="ltr"><span style="color: #ffffff;">Paradigms = Methods</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Many types of programming languages which are high/low level languages:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">High-level languages</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Uses language more similar to human language (English + Mathematical Expressions)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Can be converted to&nbsp;machine code</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Low-level languages</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Directly linked to&nbsp;architecture&nbsp;of computer</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Machine/Assembly code are&nbsp;low level</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(b) Procedural languages<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span>&nbsp;<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span></span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">High level, 3rd gen, imperative languages</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Uses&nbsp;sequences/selection/iteration</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Program gives a&nbsp;series of instructions&nbsp;line by line on&nbsp;what/how to&nbsp;so an operation</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Statements are called&nbsp;functions/procedures</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Breaks down&nbsp;the solution into&nbsp;subroutine blocks&nbsp;which are rebuilt and combined to form the program</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Tasks completed in a&nbsp;specific&nbsp;way</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Logic of program&nbsp;= series of procedure calls</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">E.g VB.NET/Python/C</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(c) Assembly language (LMC)</span></p>
+<p dir="ltr"><span style="color: #ffffff;">&nbsp;Assembly code:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Machine oriented language</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Closely related to&nbsp;computer architecture</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Uses&nbsp;mnemonics&nbsp;for instructions</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Translated by a&nbsp;assembler</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Easier to write than&nbsp;machine code, but&nbsp;more difficult&nbsp;than&nbsp;HLL.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Descriptive names&nbsp;for&nbsp;data stores</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Each instruction&nbsp;is translated into&nbsp;1 machine code instruction.</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">LMC:&nbsp;fictional processor designed to illustrate the principles of how processors and assembly code work.</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">LMC instruction set:</span></p>
+<div dir="ltr" align="left">
+<table>
+<tbody>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Mnemonic</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Function</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Example Instruction</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Explanation</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">ADD</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Add</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">ADD n</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Add the contents of n to the ACC</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">SUB</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Subtract</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">SUB n</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Subtract the contents of n from the ACC</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">STA</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Store</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">STA n</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Store the number n</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">LDA</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Load</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">LDA n</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Load the contents of n into the ACC</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">BRA</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Branch</span></p>
+<p dir="ltr"><span style="color: #ffffff;">always</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">BRA number</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Unconditional jump to number label</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">BRZ</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Branch if zero</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">BRZ number</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Jump to number label if ACC contents is zero</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">BRP</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Branch if</span></p>
+<p dir="ltr"><span style="color: #ffffff;">positive</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">BRP number</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Jump to number label if ACC contents is positive</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">INP</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Input</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">INP</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Prompt for a number to be input</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">OUT</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Output</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">OUT</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Outputs the contents of the ACC</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">HLT</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">End</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Program</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">HLT</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Stops program execution</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">DAT</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Data Location</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">n DAT 10</span></p>
+</td>
+<td>
+<p dir="ltr"><span style="color: #ffffff;">Creates data location n and stores the number 10 in it</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(d) Modes of memory addressing<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span>&nbsp;<span class="Apple-tab-span">&nbsp; &nbsp;&nbsp;</span></span></p>
+<p dir="ltr"><span style="color: #ffffff;">Different ways of accessing memory in low level languages:</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Direct addressing</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Simplest &amp; most common&nbsp;type of addressing</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Address&nbsp;in the&nbsp;memory&nbsp;where the value actually is that should be used</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">&ldquo;Instruction ADD 10 means go find data value in data location &lsquo;10&rsquo; and add that value to the accumulator&rsquo;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Used in&nbsp;assembly language</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Indirect addressing</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">The&nbsp;operand&nbsp;is the address of the data to be used by the&nbsp;operator</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Useful for&nbsp;larger memories</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">E.g. in ADD 23, if address 23 stores 45, address 45 holds the number to be used.</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Indexed addressing</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Modifies the address given by adding the number from the&nbsp;Index Register&nbsp;to the address in the instruction.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Allows&nbsp;efficient access&nbsp;to a range of memory locations by incrementing the value in the IR e.g. used to access an array</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">E.g Adding data value 5 to data location 20, 6 is at 21 etc</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Final address = base address + index</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Immediate addressing</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Used in&nbsp;assembly language&nbsp;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Memory remains as&nbsp;constant&nbsp;as it&nbsp;doesn't change&nbsp;(address field = constant)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Data in the&nbsp;operand&nbsp;is the&nbsp;value&nbsp;to be used by the&nbsp;operator&nbsp;e.g. ADD 45 adds the data value stored in data location &lsquo;45&rsquo; to the value in the ACC.</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">(e) Object-oriented languages (OOP)</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Programming paradigm&nbsp;which enables programs to&nbsp;solve problems&nbsp;by implementing components such as&nbsp;objects&nbsp;to work together to&nbsp;create a solution</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Most programs have OOP in them (Java/C++/C#)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Components of OOP include:</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Classes: Template used to define an object. Specifies what methods/attributes the object should have.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Object: Self-contained instance of a class based off real world entities made from attributes and methods.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Methods:&nbsp;Subroutines which forms the actions an object can carry out</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Attributes:&nbsp;Value stored in variable associated with an object.</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Constructor:&nbsp;Method describes how an object is created.</span></p>
+</li>
+</ul>
+<p><span style="color: #ffffff;">&nbsp;</span></p>
+<p dir="ltr"><span style="color: #ffffff;">Features of OOP</span></p>
+<ul>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Encapsulation</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Process of&nbsp;hiding data within objects&nbsp;to keep attributes&nbsp;private</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Prevents objects being amended in&nbsp;unintended ways</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Private attributes&nbsp;can only be amended by&nbsp;public methods = maintains data integrity</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Inheritance</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">When a class&nbsp;inherits&nbsp;it&rsquo;s&nbsp;parents attributes &amp; methods</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">This class might have it&rsquo;s&nbsp;own methods/attributes&nbsp;which could&nbsp;override&nbsp;methods of the parent class (unless&nbsp;superclass&nbsp;is used)</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">The class can be used as a base for&nbsp;different objects&nbsp;to save time</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Polymorphism</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Meaning&nbsp;&ldquo;Many Forms&rdquo;</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Applies same method to&nbsp;different objects = treated in same way</span></p>
+</li>
+<li dir="ltr">
+<p dir="ltr"><span style="color: #ffffff;">Code written is able to&nbsp;handle different objects&nbsp;in the same way to reduce the&nbsp;volume produced&nbsp;</span></p>
+</li>
+</ul>
+		</center>
+    </div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+		h1{
+			color: white;
+		}
+		h2{
+			color: white;
+		}
+		p{
+			color: white;
+		}
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your GCSE CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">GCSE CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping GCSE students with learning new skills and applying them in examination</p>
+		<h1>System Architecture</h1>
+  <h2>The purpose of the CPU</h2>
+  <p>The microprocessor is the central processing unit(CPU) of the computer. It is here where data processing takes place</p>
+  <p>The way that the CPU is designed and executes the program instructions is known as ‘von Neumann architecture’. </p>
+  <h2>Von Neumann Architecture</h2>
+  <p>The way that von Neumann proposed the design of the CPU entailed the Control Unit, the Arithmetic and Logic Unit and Registers. These registers are called:</p>
+  <p>•	The accumulator</p>
+  <p>•	The program counter</p>
+  <p>•	The memory address register</p>
+  <p>•	The instruciton register</p>
+  <p>•	The memory data register</p>
+  <p>The way that the registers work was the program counter would hold a number for the memory address register to go to the address in the RAM. The instruction inside the address would then be loaded to the memory data register which is then copied to the instruction register. That was the fetch stage. In the decode stage, the instruction is followed and then loaded to the accumulator. This was the execute stage. Since the first cycle is complete, then the program counter is updated to 1 for the next cycle.</p>
+  <p>In the Arithmetic and Logic Unit the following activities are carried out:</p>
+  <p>•	addition and subtraction</p>
+  <p>•	multiplication and division</p>
+  <p>•	logical tests using logic gates</p>
+  <p>•	comparisions, such as whether one number is bigger than another</p>
+  <h2>The Fetch-Decode-Execute Cycle</h2>
+  <p>1. Fetch</p>
+  <p>The first step the CPU carries out is to fetch some data and instructions (program) from main memory then store them in its own internal temporary memory areas. These memory areas are called 'registers'.
+This is called the 'fetch' part of the cycle.
+For this to happen, the CPU makes use of a vital hardware path called the 'address bus'.
+The CPU places the address of the next item to be fetched on to the address bus.
+Data from this address then moves from main memory into the CPU by travelling along another hardware path called the 'data bus'.
+You could imagine that it is a bit like a boat attendant at a lake calling in customers when their time is up -- "Boat number 3, time to come in!" The 'address' of the boat is 3 and the 'data' is its content. The boat is parked at a pier, which is like the internal register of the CPU.
+</p>
+  <p>2. Decode</p>
+  <p>The next step is for the CPU to make sense of the instruction it has just fetched.
+This process is called 'decode'.
+The CPU is designed to understand a specific set of commands. These are called the 'instruction set' of the CPU. Each make of CPU has a different instruction set.
+The CPU decodes the instruction and prepares various areas within the chip in readiness of the next step.
+</p>
+  <p>3. Execute</p>
+  <p>This is the part of the cycle when data processing actually takes place. The instruction is carried out upon the data (executed). The result of this processing is stored in yet another register.
+Once the execute stage is complete, the CPU sets itself up to begin another cycle once more.
+</p>
+  <h2>Common Characteristics of CPUs that affect performance</h2>
+  <p>Clock speed – this controls how many calculations the CPU can do in a second so the higher the clock speed, the more efficient it is.</p>
+  <p>Cache size – the cache is a small amount of primary storage which can allow for far faster processes than going to the RAM with the fetch – decode – execute cycle. Since a larger size of ache would slow the speed, there are levels of cache memory. Level 1 cache is the smallest and closest to the CPU, level 2 cache is larger and further away from the CPU and as a result is slower than Level 1 cache. </p>
+  <p>Number of cores – this can affect the CPUs performance as the number of cores can multiply the clock speed by 2 or 4 so a CPU with a clock speed of 4.2 Ghz can be slower than a CPU with a clock speed of 2.3Ghz because it has 2 cores or 4 cores.</p>
+  <h2>Embedded Systems</h2>
+  <p>Embedded systems are a computer system built within a larger device. Examples of embedded systems include:</p>
+  <p>•	MP3 Players</p>
+  <p>•	Mobile Phones</p>
+  <p>•	Video Game Consoles</p>
+  <p>•	DVD Players</p>
+  <p>•	Cars</p>
+  <p>•	Dishwashers</p>
+</p>
+  </div>
+		</center>
+    </div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>

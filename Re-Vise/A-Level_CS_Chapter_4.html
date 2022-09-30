@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Re:Vise</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Backend.css">
+<link rel="stylesheet" href="css/homepage.css">
+<style>
+        body {
+            margin: 0
+			width: 100%;
+			background-image: url(image/gradientbackground.jpg); 
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: 100% 100%;
+        }
+        .container div {
+            padding: 1%;
+			background: transparent;
+            box-sizing: border-box;
+        }
+        .left-col, .right-col {
+            width: 33.3%;
+            float: left;
+        }
+        .center-col {
+            width: 50%;
+			float: center;
+        }
+		.button {
+		  background-color: transparent;
+		  border: none;
+		  border-radius: 4px;
+		  color: white;
+		  padding: 20px;
+		  text-align: center;
+		  text-decoration: none;
+		  display: inline-block;
+		  font-size: 16px;
+		  margin: 4px 2px;
+		  cursor: pointer;
+		}
+		.pill-nav a {
+		  display: block;
+		  color: white;
+		  padding: 14px;
+		  text-decoration: none;
+		  font-size: 17px;
+		  border-radius: 5px;
+		}
+
+		.pill-nav a:hover {
+		  background-color: transparent;
+		  color: white;
+		}
+
+		.pill-nav a.active {
+		  background-color: white;
+		  color: black;
+		}
+    </style>
+<body>
+<div class="header">
+  <a href="#default" class="logo">Re:Vise</a>
+  <div class="header-right">
+    <a href="home_page.htm">Home</a>
+    <a href="GCSE.htm">GCSE</a>
+    <a href="A-Level.htm">A-Level</a>
+  </div>
+</div>
+<center>
+<div class="container">
+<h1 style="color:white"><center>Here are your A-Level CS Resources</center></h1>
+    <div class="center-col">
+		<center>
+        <h2 style="color:white">A-Level CS</h2>
+        <p style="color:white">Re:Vise offers extremely detailed notes to aid in helping A-Level students with learning new skills and applying them in examination</p>
+		<h1><span style="color: #ffffff;">1.4 Data types, data structures and algorithms</span></h1>
+<p><span style="color: #ffffff;"><strong>1.4.1 Data Types</strong></span></p>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">(a) Primitive data types</span> <span style="font-weight: 400;"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span></span></p>
+<p><span style="color: #ffffff;"><strong>Data types (</strong><span style="font-weight: 400;">All stored in the computer in</span><strong> Binary):</strong></span></p>
+<ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Integer</strong><span style="font-weight: 400;">: Single</span><strong> whole number</strong><span style="font-weight: 400;"> e.g (5,37,-102)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>String</strong><span style="font-weight: 400;">: A </span><strong>sequence </strong><span style="font-weight: 400;">of </span><strong>alphanumeric characters </strong><span style="font-weight: 400;">e.g (</span><strong>3A*s</strong><span style="font-weight: 400;">)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Real</strong><span style="font-weight: 400;">: Numbers with </span><strong>decimal/fractional</strong><span style="font-weight: 400;"> components e.g (3.14, 0.6)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Character</strong><span style="font-weight: 400;">: Single</span><strong> digit/letter/symbol</strong><span style="font-weight: 400;"> e.g (s,G,9,&amp;)</span></span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Boolean: </strong><span style="font-weight: 400;">Used to represent </span><strong>Binary logic</strong><span style="font-weight: 400;"> (True/False, 0/1)</span></strong></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(b) Represent positive numbers in binary</span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Binary </strong><span style="font-weight: 400;">is a </span><strong>base 2 number system</strong><span style="font-weight: 400;"> whereas </span><strong>denary </strong><span style="font-weight: 400;">has a </span><strong>base 10</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">To convert from </span><strong>Binary -&gt; Denary</strong><span style="font-weight: 400;"> (How I personally do it) </span><strong>I will convert 200 to denary</strong><span style="font-weight: 400;">:</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Create this</span><strong> nifty table</strong><span style="font-weight: 400;"> (It looks btec but still) (apparently called the</span><strong> tabular method </strong><span style="font-weight: 400;">according to Teach ICT) :</span></span></li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>128</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>64</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>32</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>16</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>8</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>4</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>2</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Firstly we know </span><strong>128 </strong><span style="font-weight: 400;">goes into </span><strong>denary </strong><span style="font-weight: 400;">so put a </span><strong>1</strong><span style="font-weight: 400;"> under </span><strong>128 </strong><span style="font-weight: 400;">in the table</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Then do </span><strong>200-128 = 72</strong><span style="font-weight: 400;">. Now </span><strong>64 </strong><span style="font-weight: 400;">goes into </span><strong>72 </strong><span style="font-weight: 400;">once so put a </span><strong>1</strong><span style="font-weight: 400;"> in that</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Now do </span><strong>72-64 = 8</strong><span style="font-weight: 400;">. 32 &amp; 16 don't go into 8 but</span><strong> 8 </strong><span style="font-weight: 400;">does do put a </span><strong>1</strong><span style="font-weight: 400;"> in there</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Fill </strong><span style="font-weight: 400;">the </span><strong>rest </strong><span style="font-weight: 400;">of the boxes with </span><strong>0</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Finito (</span><strong>Answer: 11001000</strong><span style="font-weight: 400;">)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>To summarize, keep subtracting and seeing whether the numbers in the top row go into the subtracted value.</strong><span style="font-weight: 400;"> It&rsquo;s hard to explain just practice lmao.</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(c) Sign and magnitude &amp; two's complement for negative numbers</span></p>
+<p><span style="color: #ffffff;"><strong>Sign &amp; Magnitude:</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">In denary, store a sign bit, a &lsquo;</span><strong>+</strong><span style="font-weight: 400;">&rsquo; or </span><strong>&lsquo;&ndash;&rsquo; </strong><span style="font-weight: 400;">as </span><strong>part of the number</strong></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Simply use the most left-handed bit, to store these as a binary value, </span><strong>0 for + and 1 for &ndash;</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Corresponding Steps</strong><span style="font-weight: 400;"> (example 127 &amp; -127)</span></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Sign Bit</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>64</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>32</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>16</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>8</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>4</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>2</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>0 (+)</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;">= 127</span></p>
+<h1>&nbsp;</h1>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Sign Bit</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>64</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>32</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>16</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>8</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>4</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>2</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>1 (-)</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;">=-127</span></p>
+<p><span style="color: #ffffff;"><strong>Two's Complement: </strong><span style="font-weight: 400;">An easy method for subtraction (</span><strong>Overpowered</strong><span style="font-weight: 400;"> if use correctly)</span><strong>:</strong></span></p>
+<ol>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Convert subtraction number into </span><strong>binary</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Start from most </span><strong>right </strong><span style="font-weight: 400;">and keep all values the same until you reach the first </span><strong>&lsquo;1&rsquo;.</strong><span style="font-weight: 400;"> Then after that </span><strong>switch &lsquo;1&rsquo;s with &lsquo;0&rsquo;s and &lsquo;0&rsquo;s for &lsquo;1&rsquo;s&rsquo;</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Add the </span><strong>binary numbers </strong><span style="font-weight: 400;">and </span><strong>discard </strong><span style="font-weight: 400;">the </span><strong>overflow</strong></span></li>
+</ol>
+<p><span style="color: #ffffff;"><strong>Corresponding Steps</strong><span style="font-weight: 400;"> (example Convert 75-35)</span></span></p>
+<ol>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">35 in Binary = 00100011</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">&nbsp;11011101 (-35)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Add 75 therefore (75+(-35)) = 01001011 + 11011101 = 0101000</span></li>
+</ol>
+<p><span style="font-weight: 400; color: #ffffff;">(d) Addition and subtraction of binary numbers</span></p>
+<p><span style="color: #ffffff;"><strong>Binary Addition (</strong><span style="font-weight: 400;">Check answer by doing in denary then converting</span><strong>)</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>0+0=0</strong><span style="font-weight: 400;">&nbsp; / </span><strong>1+0=10</strong><span style="font-weight: 400;"> (0 but </span><strong>carry 1</strong><span style="font-weight: 400;"> to next calc) / </span><strong>1+1 = 11 </strong><span style="font-weight: 400;">(1 but </span><strong>carry 1</strong><span style="font-weight: 400;"> to next calc)</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Binary Subtraction&nbsp; (</strong><span style="font-weight: 400;">Check answer by doing in denary then converting</span><strong>)</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>1-0=1</strong><span style="font-weight: 400;">&nbsp; / </span><strong>1-1=0</strong><span style="font-weight: 400;"> /&nbsp; </span><strong>10- 1 = 1</strong></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(e) Represent positive numbers in hexadecimal</span></p>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">Hexadecimal uses a </span><strong>Base 16 Number System (4 bit system</strong><span style="font-weight: 400;"> as</span> <strong>2</strong><strong>4</strong><strong>=16</strong><span style="font-weight: 400;">)</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Same as denary upto 9 then letters are used where:</span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>10=A/11=B/12=C/13=D/14=E/15=F</strong></strong></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(f) Convert positive integers between binary, denary and hex</span></p>
+<p><span style="color: #ffffff;"><strong>Denary-&gt; Binary (</strong><span style="font-weight: 400;">E.g </span><strong>Convert 81 to Binary</strong><span style="font-weight: 400;">)</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Refer to</span><strong> (b) Represent positive numbers in binary</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Binary -&gt; Denary (</strong><span style="font-weight: 400;">E.g Convert 0101 1010 to Denary)</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Plug in Binary numbers into </span><strong>Nifty Table</strong></span></li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>128</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>64</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>32</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>16</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>8</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>4</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>2</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>1</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>0</strong></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Just add the numbers which have a 1 below them (64+16+8+2 = 90)</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Binary -&gt; Hexadecimal (</strong><span style="font-weight: 400;">E.g Convert 0101 1010 to Hexadecimal)</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Split byte into </span><strong>2 nibbles</strong><span style="font-weight: 400;"> (</span><strong>0101 1010</strong><span style="font-weight: 400;">)</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Convert each nibble separately into Hexadecimal (0101 = 5 / 1010 = 10 = A)</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Combine the result together: </span><strong>5D</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Denary -&gt; Hexadecimal</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Convert Denary into Binary</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Follow instructions for: </span><strong>Binary -&gt; Hexadecimal</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Hexadecimal -&gt; Binary</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Split each Hex letter/number up</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Convert each letter/number into </span><strong>binary equivalent</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Join binary up again</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Hexadecimal -&gt; Denary</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Follow instructions for: </span><strong>Hexadecimal-&gt; Binary</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Convert Binary into Denary</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Alternate Way</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">multiply each corresponding Hex digit with increasing powers of 16</span></li>
+</ul>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">3B = 3&times;</span><strong>16</strong><strong>1</strong><span style="font-weight: 400;">+11&times;</span><strong>16</strong><strong>0</strong><span style="font-weight: 400;"> = 48+11 = 5910</span></span></p>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">(g) Representation and normalisation of floating point numbers</span> <span style="font-weight: 400;">(</span><strong>Mantissa is normally 5 bits &amp; exponent is 3. Question will tell you if it changes</strong><span style="font-weight: 400;">)</span></span></p>
+<p><span style="color: #ffffff;"><strong>Floating Point Numbers</strong><span style="font-weight: 400;">: A way of storing decimals in Binary</span></span></p>
+<ol>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">If a number is </span><strong>positive/negative</strong><span style="font-weight: 400;">, look at the first binary digit: 0 =positive, 1 = negative</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Split into </span><strong>mantissa</strong><span style="font-weight: 400;"> and </span><strong>exponent</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Use the </span><strong>exponent </strong><span style="font-weight: 400;">to float the binary point back into place (put decimal point after first number)</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Convert to denary.</span></li>
+</ol>
+<p><span style="color: #ffffff;"><strong>Negative Values</strong><span style="font-weight: 400;">:</span></span></p>
+<ol>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Split into </span><strong>mantissa </strong><span style="font-weight: 400;">&nbsp;and </span><strong>exponent</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Evaluate the </span><strong>exponent</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Move the binary point </span><strong>one place</strong><span style="font-weight: 400;"> to the left (If exponent is -1 for example)</span></span></li>
+</ol>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">The number of bits chosen for the mantissa &amp; exponent affects the </span><strong>range </strong><span style="font-weight: 400;">and the </span><strong>accuracy </strong><span style="font-weight: 400;">of the values that can be stored:</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">If </span><strong>more bits</strong><span style="font-weight: 400;"> are used for the mantissa = more </span><strong>accurate </strong><span style="font-weight: 400;">values.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">But the </span><strong>range </strong><span style="font-weight: 400;">is </span><strong>limited </strong><span style="font-weight: 400;">by the </span><strong>small exponent</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">If more bits are used for the </span><strong>exponent</strong><span style="font-weight: 400;">, = </span><strong>range </strong><span style="font-weight: 400;">of </span><strong>values </strong><span style="font-weight: 400;">stored is </span><strong>greater</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">But the accuracy is </span><strong>limited </strong><span style="font-weight: 400;">by the </span><strong>smaller mantissa</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(h) Floating point arithmetic, +ve, -ve, addition, subtraction&nbsp;</span></p>
+<p><span style="color: #ffffff;"><strong>Addition of Floating Point Numbers (</strong><span style="font-weight: 400;">E.g</span><strong> 01011 001 + 01100 010</strong><span style="font-weight: 400;">)</span></span></p>
+<ol>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Figure out what the </span><strong>exponents </strong><span style="font-weight: 400;">of the</span><strong> 2 bytes</strong><span style="font-weight: 400;"> ( 001 = 1 &amp; 010 =2)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Shift </span><strong>Mantissas </strong><span style="font-weight: 400;">according to </span><strong>exponents </strong><span style="font-weight: 400;">(010110 -&gt; 01.011 &amp; 01100 = 011.00)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Add </span><strong>digits</strong><span style="font-weight: 400;"> together (01.011 + 11.00 = 100.011)</span></span></li>
+</ol>
+<p><span style="color: #ffffff;"><strong>Subtraction of Floating Point Numbers</strong></span></p>
+<ol>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Figure out what the </span><strong>exponents </strong><span style="font-weight: 400;">of the </span><strong>2 bytes</strong><span style="font-weight: 400;"> ( 001 = 1 &amp; 010 =2)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Shift Mantissas </strong><span style="font-weight: 400;">according to </span><strong>exponents </strong><span style="font-weight: 400;">(010110 -&gt; 01.011 &amp; 01100 = 011.00)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Add </span><strong>digits </strong><span style="font-weight: 400;">together (01.011 + 11.00 = 100.011)</span></span></li>
+</ol>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">(I) Bitwise manipulation and masks</span> <span style="font-weight: 400;">&nbsp;</span></span></p>
+<p><span style="color: #ffffff;"><strong>Bitwise manipulation: </strong><span style="font-weight: 400;">The CPU is able to shift and mask binary to complete a range of operations.</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Binary can be logically shifted left/right</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Shifting Left = *2 &amp; Shifting Right = /2</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">E.g Shifting </span><strong>0001 </strong><span style="font-weight: 400;">(</span><strong>1</strong><span style="font-weight: 400;">) to the left = </span><strong>0010 </strong><span style="font-weight: 400;">(</span><strong>2</strong><span style="font-weight: 400;">) &amp;</span><strong> 1*2=2</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Masking:</strong><span style="font-weight: 400;"> Data used for bitwise operations. Using a mask (Byte/Nibble/bit etc) can be altered by a bitwise manipulation.&nbsp;</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>NOT </strong><span style="font-weight: 400;">performs a bitwise swap of values in a binary number </span><strong>(0 -&gt; 1 &amp; 1 -&gt; 0)</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>AND </strong><span style="font-weight: 400;">excludes bits by placing a 0 in the appropriate bit in the mask</span></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>(0 AND 0 =0 / 0 AND 1 = 0 / 1 AND 1 = 1)</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>OR</strong><span style="font-weight: 400;"> resets bits by placing a 1 in the appropriate bit in the mask.</span></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>(0 OR 0 =0 / 0 OR 1 = 1 / 1 OR 1 = 1)</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>XOR </strong><span style="font-weight: 400;">checks if corresponding bits are the same.</span></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>(0 XOR 0 =0 / 0 XOR 1 = 1 / 1 XOR 1 = 0)</strong></strong></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(j) Character representation (ASCII and UNICODE)</span></p>
+<p><span style="color: #ffffff;"><strong>Character Set</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Normally equates to the </span><strong>symbols </strong><span style="font-weight: 400;">on the </span><strong>keyboard </strong><span style="font-weight: 400;">that are represented by the computer by unique </span><strong>binary numbers</strong><span style="font-weight: 400;"> and may include </span><strong>control codes</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Number of bits used for one character is </span><strong>1 byte</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">&nbsp;number of characters tend to be a </span><strong>power of 2</strong><span style="font-weight: 400;"> and uses more bits for an </span><strong>extended set</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>ASCII</strong><span style="font-weight: 400;"> (American Standard Code for Information Interchange)</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>ASCII </strong><span style="font-weight: 400;">is a</span><strong> 256 character set </strong><span style="font-weight: 400;">which is based on a </span><strong>8-digit binary pattern</strong><span style="font-weight: 400;"> (7 bits + parity bit)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>limited character set </strong><span style="font-weight: 400;">makes it impossible to display other </span><strong>characters</strong><span style="font-weight: 400;"> &amp; symbols outside the </span><strong>English alphabet</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>UNICODE</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">UNICODE was originally a</span><strong> 16-bit coding system </strong><span style="font-weight: 400;">but now has over </span><strong>65000</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Updated to remove the </span><strong>16-bit restriction</strong><span style="font-weight: 400;"> by using a </span><strong>series of code pages </strong><span style="font-weight: 400;">with each page representing the </span><strong>chosen language symbols</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Original </span><strong>ASCII representations</strong><span style="font-weight: 400;"> are included with the</span><strong> same numeric values</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>1.4.2 Data Structures</strong> <span style="font-weight: 400;">&nbsp;</span></span></p>
+<p><span style="font-weight: 400; color: #ffffff;">(a) Arrays (3D), records, lists, tuples</span></p>
+<p><span style="color: #ffffff;"><strong>Arrays</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Data structure</strong><span style="font-weight: 400;"> which contains a </span><strong>set of data items</strong><span style="font-weight: 400;"> of the </span><strong>same data type</strong><span style="font-weight: 400;"> grouped together under a </span><strong>single identifier</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Static data structure</strong><span style="font-weight: 400;"> (Size can&rsquo;t change)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Each element can be </span><strong>accessed &amp; addressed quickly </strong><span style="font-weight: 400;">by accessing the </span><strong>index/subscript</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Stored</span><strong> contiguously </strong><span style="font-weight: 400;">in memory</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Multi dimensional</strong><span style="font-weight: 400;"> (1D (</span><strong>Spreadsheet</strong><span style="font-weight: 400;">), 2D (</span><strong>Table</strong><span style="font-weight: 400;">), 3D (</span><strong>Multiple Tables</strong><span style="font-weight: 400;">))</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Records</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Data stores organised by </span><strong>attributes </strong><span style="font-weight: 400;">(fields) containing </span><strong>one item</strong><span style="font-weight: 400;"> of data</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Lists</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Abstract data type </strong><span style="font-weight: 400;">where the same item can occur </span><strong>twice</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Data stores </span><strong>organised </strong><span style="font-weight: 400;">by an </span><strong>index</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Tuples</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Ordered set of values which are </span><strong>immutable </strong><span style="font-weight: 400;">(can&rsquo;t be modified)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Multiple data types </strong><span style="font-weight: 400;">stored as it&rsquo;s similar to a list</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(b) Linked lists, graphs, stack, queue, tree, binary search tree, hash table</span></p>
+<p><span style="color: #ffffff;"><strong>Linked Lists</strong></span></p>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>Dynamic data structure</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Uses </span><strong>index values</strong><span style="font-weight: 400;">/</span><strong>pointers</strong><span style="font-weight: 400;"> to sort lists in specific ways</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Can be organised into more than </span><strong>one category</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Needs to be </span><strong>traversed </strong><span style="font-weight: 400;">until </span><strong>desired element</strong><span style="font-weight: 400;"> is found</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">To add data: data added to the next</span><strong> available space</strong><span style="font-weight: 400;"> &amp; </span><strong>pointers adjusted</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">To remove data: Pointer from </span><strong>previous item set</strong><span style="font-weight: 400;"> to </span><strong>item that will be removed </strong><span style="font-weight: 400;">which </span><strong>bypasses </strong><span style="font-weight: 400;">the</span><strong> removed item</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The contents may not be </span><strong>stored contiguously </strong><span style="font-weight: 400;">in memory.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Graphs</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Set of </span><strong>vertices/nodes </strong><span style="font-weight: 400;">connected by </span><strong>edges/arcs</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Can be represented by an adjacency</span><strong> matrix</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Edges can be:&nbsp;</span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>directional </strong><span style="font-weight: 400;">or </span><strong>bi-directional</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>directed </strong><span style="font-weight: 400;">or </span><strong>undirected</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>weighted </strong><span style="font-weight: 400;">or </span><strong>unweighted</strong></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Searched by </span><strong>breadth/depth first traversal</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Stack</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>LIFO </strong><span style="font-weight: 400;">(Last In First Out)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>2 pointers (Top/bottom)</strong><span style="font-weight: 400;"> Top Pointer = </span><strong>Stack Pointer</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Data is </span><strong>added </strong><span style="font-weight: 400;">(</span><strong>PUSH</strong><span style="font-weight: 400;">) and </span><strong>removed </strong><span style="font-weight: 400;">(</span><strong>POP</strong><span style="font-weight: 400;">) from the </span><strong>top of the stack</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Stack overflow</strong><span style="font-weight: 400;">: When data is trying to go into </span><strong>stack </strong><span style="font-weight: 400;">but </span><strong>stack is full</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Queue</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>FIFO </strong><span style="font-weight: 400;">(First In First Out)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>2 pointers (Start/End)</strong><span style="font-weight: 400;"> Start Pointer = </span><strong>Queue Pointer</strong></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Data is</span><strong> added (enqueue)</strong><span style="font-weight: 400;"> from </span><strong>end </strong><span style="font-weight: 400;">&amp; </span><strong>data removed (dequeue)</strong><span style="font-weight: 400;"> from the </span><strong>top of queue</strong></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Tree</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Are </span><strong>dynamic branching</strong><span style="font-weight: 400;"> data structures.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">They consist of </span><strong>nodes </strong><span style="font-weight: 400;">that have</span><strong> sub nodes </strong><span style="font-weight: 400;">(</span><strong>children</strong><span style="font-weight: 400;">).</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The </span><strong>first node</strong><span style="font-weight: 400;"> at the start of the tree&nbsp; (</span><strong>root node</strong><span style="font-weight: 400;">)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The lines that join the nodes are called (</span><strong>branches</strong><span style="font-weight: 400;">)</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Binary search tree</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Each node has a maximum</span><strong> of 2 children </strong><span style="font-weight: 400;">from a </span><strong>left branch</strong><span style="font-weight: 400;"> and a </span><strong>right branch</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">To add data to the tree, it is placed at the end of the list in the </span><strong>first available space</strong><span style="font-weight: 400;"> and added to the tree following the rules:</span></span></li>
+</ul>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">If a child node is </span><strong>less than a parent node</strong><span style="font-weight: 400;">, it goes to the </span><strong>left </strong><span style="font-weight: 400;">of the parent.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">If a child node is </span><strong>greater than a parent node</strong><span style="font-weight: 400;">, it goes to the </span><strong>right </strong><span style="font-weight: 400;">of the parent.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Hash table</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Enable </span><strong>access to data </strong><span style="font-weight: 400;">that is not </span><strong>stored in a structured manner</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>Hash functions</strong><span style="font-weight: 400;"> generate an </span><strong>address </strong><span style="font-weight: 400;">in a table for the data that can be</span><strong> recalculated </strong><span style="font-weight: 400;">to </span><strong>locate </strong><span style="font-weight: 400;">that data.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>1.4.3 Boolean Algebra</strong></span></p>
+<p><span style="font-weight: 400; color: #ffffff;">(a) Defining a problem using Boolean logic</span></p>
+<p><span style="color: #ffffff;"><strong>Boolean Logic</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>NOT </strong><span style="font-weight: 400;">(</span><strong>Negation</strong><span style="font-weight: 400;">) Symbol: &not; (e.g if A=0 -&gt; &not;A =1 / A=1 -&gt; &not;A = 0)&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>AND </strong><span style="font-weight: 400;">(</span><strong>Conjunction</strong><span style="font-weight: 400;">) Symbol: ^ (e.g if A=1 &amp; B=1 -&gt; A^B =1 Otherwise A^B = 0 )&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>OR </strong><span style="font-weight: 400;">(</span><strong>Disjunction</strong><span style="font-weight: 400;">) Symbol: v (e.g if A=1 / B=1 -&gt; AvB =1 Otherwise AvB = 0 )&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>XOR </strong><span style="font-weight: 400;">(</span><strong>Exclusive Disjunction</strong><span style="font-weight: 400;">) Symbol: </span><span style="font-weight: 400;">v</span><span style="font-weight: 400;"> (e.g if A=1 / B=1 (Not other)-&gt; AvB =1 Otherwise A</span><span style="font-weight: 400;">v</span><span style="font-weight: 400;">B = 0 )</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>NAND </strong><span style="font-weight: 400;">(</span><strong>Conjunction</strong><span style="font-weight: 400;">) Symbol:&nbsp; &not;(A &and; B)&nbsp; (e.g if A=1/0 &amp; B=1/0 -&gt; AvB = 0/1 Otherwise AvB = 1 )&nbsp;</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>NOR </strong><span style="font-weight: 400;">(</span><strong>Disjunction</strong><span style="font-weight: 400;">) Symbol: &not;(A V B) (e.g if A=1/0 &amp; B=1/0 -&gt; AvB = 1/0 Otherwise AvB = 0 )&nbsp;</span></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(b) Manipulating Boolean expressions (Karnaugh maps)</span></p>
+<p><span style="color: #ffffff;"><strong>Karnaugh maps</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Are a </span><strong>visual method </strong><span style="font-weight: 400;">for simplifying </span><strong>logical expressions</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">They </span><strong>show </strong><span style="font-weight: 400;">all the outputs on a grid</span> <span style="font-weight: 400;">of all </span><strong>possible outcomes </strong><span style="font-weight: 400;">(Truth Table)</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The method is to </span><strong>create blocks</strong><span style="font-weight: 400;"> of</span><strong> 1s</strong><span style="font-weight: 400;"> as </span><strong>large </strong><span style="font-weight: 400;">as possible so that the 1s are covered by as </span><strong>few blocks as possible</strong><span style="font-weight: 400;"> and </span><strong>no 0s are included</strong><span style="font-weight: 400;">.</span></span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">The blocks can </span><strong>wrap </strong><span style="font-weight: 400;">around the diagram if necessary, in </span><strong>both directions</strong><span style="font-weight: 400;">, from </span><strong>side to side </strong><span style="font-weight: 400;">or from </span><strong>top to bottom</strong><span style="font-weight: 400;">.</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>The rules for using Karnaugh maps:</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><strong>No 0s (zeros)</strong><span style="font-weight: 400;"> allowed &amp; diagonal blocks</span></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Larger groups the better</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Every 1 must be</span><strong> within a block</strong></span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Overlapping blocks allowed</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Wrap around blocks allowed</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">Aim for </span><strong>smallest possible groups</strong> <span style="font-weight: 400;">&nbsp; &nbsp; &nbsp; &nbsp; </span><strong>Karnaugh Map</strong></span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">(c) Simplifying statements in Boolean algebra using rules</span></p>
+<p><span style="color: #ffffff;"><strong>Equivalence / Iff (if and only if)</strong></span></p>
+<p><span style="color: #ffffff;"><strong>Symbol (AND)</strong><span style="font-weight: 400;">:</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">&equiv; e.g. (A &and; B) &equiv; &not;(&not;A V &not;B) ------&gt; (A AND B &equiv; NOT (NOT A OR NOT B))</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Alternative notations</strong><span style="font-weight: 400;"> (</span><strong>XOR</strong><span style="font-weight: 400;">):</span></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">e.g. (A ⊻ B) &equiv; (A &and; &not;B) V (&not;A &and; B) ------&gt; (A XOR B &equiv; (A AND NOT B) OR (NOT A AND B))</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Boolean algebra</strong></span></p>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">There are rules, similar to arithmetic (</span><strong>Statistics</strong><span style="font-weight: 400;"> if you take </span><strong>A-level Maths</strong><span style="font-weight: 400;">), for manipulating&nbsp;</span></span></p>
+<h1>&nbsp;</h1>
+<p><span style="color: #ffffff;"><strong>Boolean expressions:</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Boolean Rule</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Boolean Expression</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Description</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>De Morgan&rsquo;s laws</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">&not;(A V B) &equiv; &not;A &and; &not;B</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">&not;(A &and; B) &equiv; &not;A V &not;B</span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A NOR B &equiv; NOT A AND NOT B</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A NAND B &equiv; NOT A OR NOT B</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Distribution</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A &and; (B V C) &equiv; (A &and; B) V (A &and; C)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A V (B &and; C) &equiv; (A V B) &and; (A V C)</span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A AND (B OR C) &equiv; (A AND B) OR (A AND C)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A OR (B AND C) &equiv; (A OR B) AND (A OR C)</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Association</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">(A &and; B) &and; C &equiv; A &and; (B &and; C)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">(A V B) V C &equiv; A V (B V C)</span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">(A AND B) AND C &equiv; A AND (B AND C)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">(A OR B) OR C &equiv; A OR(B OR C)</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Commutation</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A &and; B &equiv; B &and; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A V B &equiv; B V A</span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A AND B &equiv;&nbsp; B AND A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A OR B &equiv;&nbsp; B OR A</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Double Negation</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">&not;(&not; A) &equiv; A</span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">NOT(NOT A) &equiv;&nbsp; A</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Simplification Expressions</strong></span></p>
+<p><span style="color: #ffffff;"><strong>(1 = True</strong></span></p>
+<p><span style="color: #ffffff;"><strong>0 = False)</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>AND&nbsp;</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A &and; A &equiv; A&nbsp;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A &and; 0 &equiv; 0&nbsp;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A &and; 1 &equiv; A&nbsp;</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A &and; &not;A &equiv; 0&nbsp;</span></li>
+</ul>
+<br />
+<p><span style="color: #ffffff;"><strong>OR</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A V A &equiv; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A V 0 &equiv; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A V 1 &equiv; 1</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A V &not;A &equiv; 1</span></li>
+</ul>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>AND&nbsp;</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A AND A &equiv; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A AND 0 &equiv; 0</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A AND 1 &equiv; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A AND NOT A &equiv; 0</span></li>
+</ul>
+<br />
+<p><span style="color: #ffffff;"><strong>OR&nbsp;</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A OR A &equiv; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A OR 0 &equiv; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A OR 1 &equiv; 1</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A AND NOT A &equiv; 1</span></li>
+</ul>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Absorption</strong></span></p>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A V (A &and; B) &equiv; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A &and; (A V B) &equiv; A&nbsp;</span></li>
+</ul>
+</td>
+<td>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A OR (A AND B) &equiv; A</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A AND (A OR B) &equiv; A</span></li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;">(d) Logic gate diagrams and truth tables</span></p>
+<p><span style="color: #ffffff;"><strong>Logic Gates: </strong><span style="font-weight: 400;">Building block of a digital circuit used to implement Boolean functions</span></span></p>
+<p><span style="color: #ffffff;"><strong>Truth Table: </strong><span style="font-weight: 400;">Mathematical table used with logic gates to list out all possible scenarios of the corresponding logic gate(s)</span></span></p>
+<p><span style="color: #ffffff;"><strong>Logic Gates Examples:</strong></span></p>
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>Type of GATE</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Boolean Expression</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Diagram</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>Truth Table</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>AND</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>A &and; B</strong></span></p>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>OR</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>A V B</strong></span></p>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>NOT</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>&not;A</strong></span></p>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>NAND</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>&not;(A &and; B)</strong></span></p>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+<td><br />
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>A</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>B</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>&not;(A &and; B)</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>NOR</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>&not;(A V B)</strong></span></p>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+<td><br /><br />
+<table>
+<tbody>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>A</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>B</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>&not;(A V B)</strong></span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+</tr>
+<tr>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">T</span></p>
+</td>
+<td>
+<p><span style="font-weight: 400; color: #ffffff;">F</span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<br /><br /></td>
+</tr>
+<tr>
+<td>
+<p><span style="color: #ffffff;"><strong>XOR</strong></span></p>
+</td>
+<td>
+<p><span style="color: #ffffff;"><strong>A ⊻ B</strong></span></p>
+</td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+<td><span style="color: #ffffff;">&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-weight: 400; color: #ffffff;">(e) D type flip flops, half and full adders</span></p>
+<p><span style="color: #ffffff;"><strong>D type flip flops</strong></span></p>
+<ul>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Store the state of a data bit in RAM</span></li>
+</ul>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li><span style="color: #ffffff;"><strong><strong>D = Delay</strong></strong></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">2 Inputs: data(D) &amp; clock</span></li>
+<li style="font-weight: 400;"><span style="color: #ffffff;"><span style="font-weight: 400;">2 Outputs</span><span style="font-weight: 400;">: the delayed data (</span><strong>Q</strong><span style="font-weight: 400;">) and the inverse&nbsp;</span></span></li>
+</ul>
+<p><span style="color: #ffffff;"><span style="font-weight: 400;">of the delayed data (</span><strong>&not;Q</strong><span style="font-weight: 400;">)</span></span></p>
+<p><span style="color: #ffffff;"><strong>Half Adders&nbsp;</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Half adders logic circuit with 2 inputs &amp; outputs</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">The sum (S) is an XOR gate (A XOR B)</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">The carry (C) is an AND gate (A AND B)</span></li>
+</ul>
+<p><span style="color: #ffffff;"><strong>Full adders</strong></span></p>
+<ul>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">Combination of half adders to make a full adder</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">The sum (S) is an XOR gate</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">The carry (C) is an AND gate</span></li>
+<li style="font-weight: 400;"><span style="font-weight: 400; color: #ffffff;">A B and Cin are added together = The result is given in the sum (S) N And a carry bit in Cout</span></li>
+</ul>
+<p><span style="font-weight: 400; color: #ffffff;">Series of full adders combined together allows computers to add binary numbers.</span><br /><br /></p>
+		</center>
+    </div>
+</div>
+</center>
+<div class="bottomfooter">
+	<p style="color:white">2021: Re:Vise</p>
+	<p style="color:white">Made by Abdirahman Monamud</p>
+</div>
+</body>
+</html>
